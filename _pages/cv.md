@@ -1,9 +1,9 @@
 ---
-title:  "About"
+title:  "CV"
 layout: archive
-permalink: /about/
+permalink: /cv/
 author_profile: true
 comments: true
 ---
 
-This is my blog page.
+My cv
