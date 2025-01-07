@@ -1,9 +1,10 @@
 ---
-title:  "Projects"
+title:  "Selected Projects"
 layout: archive
 permalink: /projects/
 author_profile: true
 comments: true
 ---
 
-My cv
+Projects I've done: 
+
