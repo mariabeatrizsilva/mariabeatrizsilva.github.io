@@ -2,10 +2,12 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Blog"
-    url: /blog/
   - title: "CV"
     url: /cv/
+  - title: "Selected Projects"
+    url: /projects/
+  - title: "Blog"
+    url: /blog/
   # - title: "Projects"
   #   url: /portfolio/
   # - title: "Sample Posts"
