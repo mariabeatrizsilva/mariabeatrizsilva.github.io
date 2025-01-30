@@ -8,42 +8,49 @@ comments: true
 
 <!-- Left aligned images with title + course + etc. -->
 <div class="proj"> 
-<h3> Murano Glass Cup - CSCI-UA 480: Computer Graphics </h3>
+<img width="200" height="200" src="/assets/images/cup-preview.png">
 <div class="teaser">
-<img align="left" width="200" height="200" src="/assets/images/cup-preview.png">
+<h3> Murano Glass Cup</h3>
+<text font-color="blue"> CSCI-UA 480: Computer Graphics </text>
 <text class="text">Explaining brieflt the cup </text>
-</div>
-<br>
 <a class="btn" href="https://github.com/mariabeatrizsilva/murano">
-      See the code!
+   Code
 </a>
+</div>
 </div>
 
 <style>
 
 .btn {
-  text-decoration: none;
-  padding: 0.5rem;
-  border: 1px solid #333333;
-  width: 50px;
-  height: 30px;
-  font-size: 10px;
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+    text-decoration: none;
+    padding: 0.5rem;
+    border: 1px solid #333333;
+    width: 100px;
+    height: 30px;
+    font-size: 10px;
 }
 
 .proj {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .teaser {
     display: flex; 
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
 }
 
-.text{
-    padding-left: 10px;
+h3{
+    margin: 0px;
 }
 
+p{
+    margin:0;
+}
 </style>
 
