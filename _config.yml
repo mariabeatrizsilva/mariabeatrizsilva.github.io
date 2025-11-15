@@ -17,9 +17,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Maria Beatriz's Site"
+title                    : "Maria Beatriz Silva"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : Presidential Honors Scholar | RA at NYU's Immersive Computing Lab
 name                     : "Maria Beatriz Silva"
 description              : "An amazing website."
 url                      : "https://mariabeatrizsilva.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Maria Beatriz Silva"
   avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Call me Bia :)"
+  bio              : "Hello! My name is Maria Beatriz and I am a Senior studying Computer Science at NYU with a minor in Mathematics. I currently a Research Assistant at NYU's Immersive Computer Lab, where I conduct research at the intersection of computer graphics, human perception, and machine learning."
   location         : "NYC"
   # email            : "mariasilva@nyu.edu"
   links:
@@ -124,7 +124,7 @@ author:
       url: "mailto:mariasilva@nyu.edu"
     - label : "CV"
       icon: "fas fa-fw fa-link"
-      url: "https://mariabeatrizsilva.github.io/resume/MariaBeatriz_Silva_Resume-2.pdf"
+      url: "https://mariabeatrizsilva.github.io/resume/MariaBeatriz_Silva_Resume_2025.pdf"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/mariabiasilva"
