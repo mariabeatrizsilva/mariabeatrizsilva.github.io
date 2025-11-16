@@ -1,9 +1,8 @@
 ---
-title: "Geometry Remesher: Algorithmic Optimization of 3D Meshes"
-excerpt: "Implementation of the Alliez et al. remeshing pipeline using Python to generate uniform, high-quality re-triangulations of 3D models."
-layout: single # Use 'single' layout for posts
-permalink: /projects/geometry-remesher/ # Define a clean URL under /projects/
-# Add a date field required by posts
+title: "Geometry Remesher"
+excerpt: "Making messy 3D meshes nice and uniform again."
+layout: single
+permalink: /projects/geometry-remesher/
 date: 2025-11-15 10:00:00 -0400 
 header:
   image: /assets/images/remesher_preview.png 
@@ -14,41 +13,47 @@ tags:
   - Python
   - Computational Geometry
 ---
+<style>
+.page__hero--overlay {
+    max-height: 400px;
+}
 
-# Geometry Remesher: Algorithmic Optimization of 3D Meshes
+.page__hero-image {
+    object-fit: cover;
+}
+</style>
 
-## Project Summary 🎯
+# Geometry Remesher
 
-This project implements the sophisticated geometry remeshing pipeline introduced by Alliez et al. (2002). The goal is to transform existing, potentially irregular 3D meshes into a new mesh composed of more **uniform (equilateral) and better-distributed triangles**. This optimization is crucial for efficient downstream applications in graphics and simulation.
+## What it does
 
-The entire workflow is demonstrated within a **Jupyter Notebook (`Remesher_v4.ipynb`)**, with the core logic encapsulated within a **Python class (`remesher.py`)**.
+This project takes 3D meshes and cleans them up. Sometimes meshes can be messy—triangles of all different sizes, weird angles, uneven distribution. This remesher reorganizes everything into nice, uniform, equilateral triangles.
 
-## My Role and Contribution 🛠️
+I followed the approach from a paper by Alliez et al. (2002), implementing the whole pipeline in Python. Everything lives in a Jupyter notebook so you can see the process step by step.
 
-I implemented the complete five-step remeshing pipeline in **Python**, leveraging libraries like `scipy` and `igl` (libigl). My contributions included:
-* **Translating theory to code:** Implementing the complex geometric algorithms (such as Harmonic Parameterization and Error Diffusion) into a functional, reusable Python class.
-* **Workflow Development:** Structuring the process within a Jupyter Notebook for clear execution, visualization, and parameter exploration.
-* **Algorithmic Exploration:** Testing and visualizing the impact of different parameters (e.g., grid size, dithering methods) on the final mesh quality.
+## How it works
 
-## The Five-Step Remeshing Pipeline 💡
+The remeshing happens in five steps:
 
-The core of the project is the sequential execution of these five steps, which transform the 3D model through a 2D intermediate space:
+**1. Flatten it out**  
+First, I map the 3D mesh onto a 2D circle using harmonic parameterization. 
 
-1.  **Parameterization:** The 3D input mesh is mapped onto a **2D parameter space** using **Harmonic Parameterization** ($H$). This creates a smooth, bijective mapping onto a 2D circle.
-2.  **Map Generation:** An **Area Map ($\mathcal{M}_{A}$)** is computed over the 2D space. This map encodes geometric distortion, which is later used to correct the density of sampling points.
-3.  **Sampling Point Generation:** New vertices are determined by applying a **halftoning/error-diffusion algorithm** (using the Bayer kernel) to the Area Map. This scatters points non-uniformly across the 2D space, respecting the target density defined by the map.
-4.  **2D Triangulation:** A **2D Delaunay triangulation** (using `scipy.spatial.Delaunay`) is applied to connect the newly sampled 2D points, forming the faces of the new mesh.
-5.  **3D Mesh Reconstruction:** The 2D vertices and faces are mapped back onto the original 3D surface using the **inverse of the Harmonic Parameterization ($H^{-1}$)**, yielding the final, optimized 3D model.
+**2. Make an area density map**  
+I then create a map that shows where the original mesh was stretched or compressed during flattening. This helps us know where we need more or fewer points later.
 
-## Results and Skills Demonstrated ✨
+**3. Scatter new points**  
+Using an error diffusion algorithm (with a Bayer kernel), I place new vertices across the flattened surface. The density map ensures points are distributed in accordance to the area map.
 
-This project effectively demonstrates proficiency in:
-* **Computational Geometry:** Deep understanding and implementation of complex geometric algorithms.
-* **Python Development:** Building reusable class structures for complex pipelines.
-* **Data Processing:** Efficient handling of 3D mesh data using specialized libraries (`igl`, `scipy`).
-* **Visualization and Analysis:** Using Jupyter Notebooks to explore parameters and visualize intermediate results (e.g., Area Maps, different dithering effects).
+**4. Connect the dots**  
+I run a 2D Delaunay triangulation to connect all the new points into triangles.
+
+**5. Wrap it back**  
+Finally, I map everything back to 3D using the inverse of the original parameterization. Now you have a clean, remeshed 3D model.
+
+## Tech
+
+Built with Python, using `scipy` for triangulation and `libigl` for mesh handling. The whole thing is packaged as a reusable class in `remesher.py`, with examples in a Jupyter notebook.
 
 ---
-*View the full source code, data, and implementation notebook on [GitHub](https://github.com/mariabeatrizsilva/GeometryRemesher).*
 
-***
+[View on GitHub](https://github.com/mariabeatrizsilva/GeometryRemesher)

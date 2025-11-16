@@ -6,7 +6,7 @@ author_profile: true
 comments: true
 ---
 
-<div class="projects-grid">
+<div class="projects-list">
 
 <div class="project-card">
 <div class="card-image">
@@ -51,6 +51,7 @@ comments: true
 <p class="card-tech">Tech • Stack</p>
 <div class="card-links">
 <a href="#">GitHub</a>
+<a href="#">Demo</a>
 </div>
 </div>
 </div>
@@ -58,13 +59,13 @@ comments: true
 </div>
 
 <style>
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 24px;
-    max-width: 1000px;
+.projects-list {
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .project-card {
@@ -72,10 +73,9 @@ comments: true
     border: 1px solid #e0e0e0;
     border-radius: 12px;
     overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
-    flex-direction: column;
-    height: 100%;
+    flex-direction: row;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
@@ -84,13 +84,13 @@ comments: true
 }
 
 .card-image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
+    width: 280px;
+    flex-shrink: 0;
     background: #f8f8f8;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .card-image img {
@@ -100,7 +100,7 @@ comments: true
 }
 
 .card-content {
-    padding: 20px;
+    padding: 24px 28px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -109,7 +109,7 @@ comments: true
 
 .card-content h3 {
     margin: 0;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #333;
 }
@@ -122,52 +122,56 @@ comments: true
 }
 
 .card-description {
-    font-size: 0.9rem;
-    line-height: 1.5;
+    font-size: 0.95rem;
+    line-height: 1.6;
     color: #555;
-    margin: 4px 0;
-    flex-grow: 1;
+    margin: 6px 0;
 }
 
 .card-tech {
     font-family: 'Courier New', monospace;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     color: #666;
-    margin: 8px 0 4px 0;
+    margin: 4px 0 12px 0;
 }
 
 .card-links {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     flex-wrap: wrap;
-    margin-top: 8px;
 }
 
 .card-links a {
     display: inline-block;
-    padding: 6px 12px;
-    border: 1px solid #333;
-    border-radius: 4px;
+    padding: 8px 18px;
+    background: #f0f0f0;
+    border-radius: 20px;
     text-decoration: none;
     color: #333;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    font-weight: 500;
     transition: all 0.2s ease;
 }
 
 .card-links a:hover {
     background: #333;
     color: #fff;
+    transform: translateY(-1px);
 }
 
-/* Responsive - single column on mobile */
+/* Mobile - stack vertically */
 @media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
+    .project-card {
+        flex-direction: column;
     }
     
     .card-image {
-        height: 180px;
+        width: 100%;
+        height: 200px;
+    }
+    
+    .card-content {
+        padding: 20px;
     }
 }
 </style>
