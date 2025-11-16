@@ -16,8 +16,8 @@ classes: wide
 <h3 style="margin-bottom: 1rem;">GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts</h3>
 
 <div style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
-  <img src="/assets/images/geneva-artifacts.png" alt="GeneVA Dataset Overview" style="width: 100%; max-width: 800px; margin-bottom: 0.5rem; border-radius: 4px; display: block;">
-  <p style="font-size: 0.9rem; color: #666; font-style: italic; margin: 0;">Our Artifact Taxonomy</p>
+  <img src="/assets/images/geneva-artifacts.png" alt="GeneVA Dataset Overview" style="width: 100%; max-width: 1000px; margin-bottom: 0.5rem; border-radius: 4px; display: block;">
+  <p style="font-size: 0.9rem; color: #666; font-style: italic; margin: 0; text-align: center;">Our Artifact Taxonomy</p>
 </div>
 
 <p style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.95rem;">
