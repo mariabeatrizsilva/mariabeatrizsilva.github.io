@@ -34,6 +34,29 @@ This project implements a **Multiresolution Laplacian Mesh Deformer**, a techniq
 
 This implementation is based on course content from _Professor Daniele Panozzo (NYU)_, who provided the initial setup, including the iPyWidget used in the `DeformExample.ipynb` notebook for interactive visualization and the `Selection.ipynb` that is used to add handles to a mesh.
 
+
+<div style="display: flex; gap: 10px; margin: 2rem 0; flex-wrap: wrap; justify-content: center;">
+  <div style="flex: 1; min-width: 280px; max-width: 350px;">
+    <video width="100%" controls autoplay loop muted playsinline style="border-radius: 4px;">
+      <source src="/assets/videos/hand-move.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.5rem; font-style: italic;">
+      Hand deformation example
+    </p>
+  </div>
+  
+  <div style="flex: 1; min-width: 280px; max-width: 350px;">
+    <video width="100%" controls autoplay loop muted playsinline style="border-radius: 4px;">
+      <source src="/assets/videos/woody-dance.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <p style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.5rem; font-style: italic;">
+      Real-time interaction
+    </p>
+  </div>
+  </div>
+
 ## Multiresolution Mesh Editing Pipeline
 
 The overall deformation process is divided into three main phases to achieve detail-preserving manipulation, carried out by methods of the initialized deformer_ instance. The instance is initialized with the original mesh vertices ($V$), faces ($F$), and the indices of the control handles.
