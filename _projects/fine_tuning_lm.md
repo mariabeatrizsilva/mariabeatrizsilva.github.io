@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Fine-Tuning Language Models"
-permalink: /projects/fine-tuning-lms/
+permalink: /projects/fine_tuning_lm/
 author_profile: true
 classes: wide
 ---
