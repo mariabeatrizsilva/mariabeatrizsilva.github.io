@@ -21,7 +21,7 @@ title                    : "Maria Beatriz Silva"
 title_separator          : "-"
 subtitle                 : Presidential Honors Scholar at NYU and Research Assistant at NYU's Immersive Computing Lab
 name                     : "Maria Beatriz Silva"
-description              : "An amazing website."
+description              : "My Website."
 url                      : "https://mariabeatrizsilva.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Maria Beatriz Silva"
   avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Hello! My name is Maria Beatriz and I am a Senior studying Computer Science at NYU with a minor in Mathematics. I currently a Research Assistant at NYU's Immersive Computer Lab, where I conduct research at the intersection of computer graphics, human perception, and machine learning."
+  bio              : "I'm a Presidential Honors Scholar studying Computer Science at NYU Courant with a minor in Mathematics. As a Research Assistant at NYU's Immersive Computing Lab, I develop computational methods at the intersection of computer graphics, human perception, and machine learning."
   location         : "NYC"
   # email            : "mariasilva@nyu.edu"
   links:

@@ -6,22 +6,17 @@ author_profile: true
 classes: wide
 ---
 
-I'm a Presidential Honors Scholar and Senior at NYU's Courant Institute studying Computer Science with a minor in Mathematics. As a Research Assistant at NYU's Immersive Computing Lab, I develop computational methods at the intersection of computer graphics, human perception, and machine learning, working under the guidance of Prof. Qi Sun.
+## Research Motivation
 
-## Research Interests
+I'm motivated by a fundamental gap in how we develop visual technologies: we build increasingly sophisticated systems without deeply understanding how humans actually perceive and interact with them, or whether they truly serve users' needs. My work bridges this gap by grounding graphics and AI systems in perceptual principles and human-centered considerations.
 
-My research explores how perceptual principles can inform the design of graphics systems and human-computer interaction. I'm fascinated by questions at the interface of perception and computation: How can we build rendering systems that align with human visual perception? How do we evaluate the quality of AI-generated visual content through a perceptual lens? What makes graphics algorithms perceptually effective?
-
-I'm particularly interested in perceptually-driven optimization techniques for real-time graphics, quality assessment for generative models, and developing systems that directly serve their end users by direclty considering users' needs and how they interact with technology (from both perceptual and HCI standpoints).
+The questions that drive me: How do we design rendering algorithms that align with human visual perception rather than abstract technical metrics? How can we build visual systems that are designed for the diverse ways people actually see and interact with technology?
 
 ## Current Research
 
-At NYU's Immersive Computing Lab, I'm currently contributing to two research projects:
+**Perceptually-Guided Temporal Antialiasing** (Honors Thesis): I'm investigating the relationship between temporal antialiasing (TAA) parameters and perceptual quality metrics. TAA is widely used in real-time rendering, but parameter tuning typically relies on heuristics rather than perceptual grounding. This work aims to find a relationship between TAA parameters and perceptual metrics, with the ultimate goal of optimizing TAA to directly target perceptual quality improvements.
 
-**Perceptually-Guided Temporal Antialiasing**: For my honors thesis, I'm investigating how temporal antialiasing (TAA) parameters relate to perceptual quality metrics. This work aims to develop perceptually-informed optimization strategies that improve visual quality in real-time rendering systems.
-
-**GeneVA Dataset Project**: Diffusion models now support realistic text-to-video generation, but state-of-the-art models produce unique spatio-temporal artifacts absent in static images. To address the lack of human-annotated feedback datasets for video evaluation, we created GeneVA. My contributions included implementing the end-to-end data pipeline, conducting literature reviews, influencing our artifact taxonomy, and contributing to paper writing.
-
+**GeneVA Dataset Project**: Text-to-video diffusion models produce unique spatio-temporal artifacts—flickering, temporal inconsistencies, motion distortions—that don't appear in static images. Yet we lack human-annotated datasets to systematically evaluate these artifacts. We created GeneVA to fill this gap. I built the end-to-end data collection pipeline, conducted literature reviews to inform our artifact taxonomy, and contributed to paper writing. This work addresses a critical need as video generation becomes increasingly prevalent.
 
 ## Publications
 
@@ -29,11 +24,11 @@ _Kang, J., **Silva, M.**, Sangkloy, P., Chen, K., Williams, N., & Sun, Q._(2025)
 
 _Silva, C., Piadyk, Y., Rulff, J., Panozzo, D., **Silva, M.B.**, et al._(2024). PaleoScan: Low-Cost Easy-to-use High-Volume Fossil Scanning. In *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems* (pp. 1-16).
 
-## Beyond Research
+## Teaching & Mentorship
 
-I'm committed to expanding access to computer science education. As an Education Fellow for Emerging Leaders in Technology and Engineering (ELiTE), I taught C++ and Arduino programming to high school students from underrepresented backgrounds. I continue to mentor several former students as they transition into college, recently advising a student conducting summer research at MIT on computer graphics.
+As an Education Fellow for Emerging Leaders in Technology and Engineering (ELiTE), I taught C++ and Arduino programming to high school students from underrepresented backgrounds. I continue to mentor former students as they navigate their academic paths—one mentee recently completed computer graphics research at a summer program at MIT, and I've advised others as they navigate college.
 
-My goal is to become a researcher who doesn't just push the technical state-of-the-art, but fundamentally reshapes who gets to participate in and benefit from technological innovation. I want to create graphics systems that are designed with deep consideration for human perception and the diverse needs of actual users.
+As someone who has benefitted greatly from mentorship myself, particularly through programs like Google CSRMP and the MLT Career Preparation Program, I'd like to thank all of my previous mentors for their support. 
 
 ---
 
