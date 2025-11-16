@@ -8,6 +8,21 @@ comments: true
 
 <!-- Left aligned images with title + course + etc. -->
 <div class="proj"> 
+<img width="200" height="200" src="/assets/images/remesher_teaser.png">
+<div class="teaser">
+<h3> Geometry Remesher </h3>
+<text font-color="blue"> Algorithmic Optimization of 3D Meshes </text>
+<text class="text"> Implementation of the Alliez et al. remeshing pipeline using Python to generate uniform, high-quality re-triangulations of 3D models. </text>
+<a class="btn" href="https://github.com/mariabeatrizsilva/GeometryRemesher">
+   Code
+</a>
+<a class="btn" href="/geometry-remesher/">
+   Case Study
+</a>
+</div>
+</div>
+
+<div class="proj"> 
 <img width="200" height="200" src="/assets/images/cup-preview.png">
 <div class="teaser">
 <h3> Murano Glass Cup</h3>
