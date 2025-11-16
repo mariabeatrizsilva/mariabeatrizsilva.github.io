@@ -22,7 +22,7 @@ tags:
 
 .page__hero-image {
     max-height: 350px !important;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* Alternative: if the above doesn't work, try these */
