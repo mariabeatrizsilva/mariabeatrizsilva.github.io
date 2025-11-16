@@ -3,6 +3,7 @@ layout: single
 title: "About"
 permalink: /about/
 author_profile: true
+classes: wide
 ---
 
 I'm a Presidential Honors Scholar and Senior at NYU's Courant Institute studying Computer Science with a minor in Mathematics. As a Research Assistant at NYU's Immersive Computing Lab, I develop computational methods at the intersection of computer graphics, human perception, and machine learning, working under the guidance of Prof. Qi Sun.

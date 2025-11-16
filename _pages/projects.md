@@ -24,6 +24,23 @@ comments: true
 </div>
 </div>
 
+
+<div class="project-card">
+<div class="card-image">
+<img src="/assets/images/nlp-project.png" alt="Fine-Tuning Language Models">
+</div>
+<div class="card-content">
+<h3>Fine-Tuning Language Models</h3>
+<p class="card-course">Natural Language Processing (Graduate Level)</p>
+<p class="card-description">Fine-tuned BERT for sentiment classification with robustness testing and T5 for natural language to SQL translation, implementing evaluation pipelines and data augmentation strategies.</p>
+<p class="card-tech">Python • PyTorch • Hugging Face • BERT • T5</p>
+<div class="card-links">
+<a href="https://github.com/mariabeatrizsilva/FineTuningLMs">GitHub</a>
+<a href="/projects/fine-tuning-lms/">Case Study</a>
+</div>
+</div>
+</div>
+
 <div class="project-card">
 <div class="card-image">
 <img src="/assets/images/cup-preview.png" alt="Murano Glass Cup">

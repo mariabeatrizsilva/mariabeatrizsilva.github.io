@@ -14,7 +14,7 @@ classes: wide
 <h3 style="margin-bottom: 1rem;">GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts</h3>
 
 <p style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.95rem;">
-Kang, J., <strong>Silva, M.</strong>, Sangkloy, P., Chen, K., Williams, N., & Sun, Q. (Arxiv Preprint, 2025)
+Kang, J., <strong>Silva, M.</strong>, Sangkloy, P., Chen, K., Williams, N., & Sun, Q. (arXiv Preprint, 2025)
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-style: italic; font-size: 0.95rem;">
