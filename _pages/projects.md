@@ -19,7 +19,7 @@ comments: true
 <p class="card-tech">Python • NumPy • LibIGL</p>
 <div class="card-links">
 <a href="https://github.com/mariabeatrizsilva/GeometryRemesher">GitHub</a>
-<a href="/projects/geometry-remesher/">Case Study</a>
+<a href="/projects/geometry-remesher/">Blog Post</a>
 </div>
 </div>
 </div>
@@ -27,7 +27,7 @@ comments: true
 
 <div class="project-card">
 <div class="card-image">
-<img src="/assets/images/nlp-project.png" alt="Fine-Tuning Language Models">
+<img src="/assets/images/fine_tuning_llm_teaser.png" alt="Fine-Tuning Language Models">
 </div>
 <div class="card-content">
 <h3>Fine-Tuning Language Models</h3>
@@ -36,7 +36,7 @@ comments: true
 <p class="card-tech">Python • PyTorch • Hugging Face • BERT • T5</p>
 <div class="card-links">
 <a href="https://github.com/mariabeatrizsilva/FineTuningLMs">GitHub</a>
-<a href="/projects/fine-tuning-lms/">Case Study</a>
+<a href="/projects/fine_tuning_lm/">Project Details</a>
 </div>
 </div>
 </div>
