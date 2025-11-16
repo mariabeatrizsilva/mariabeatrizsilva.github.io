@@ -8,7 +8,6 @@ classes: wide
 
 <div style="margin-top: -1rem;">
 
-<!-- ## Conference Publications -->
 
 <div style="margin-bottom: 3rem; margin-top: 1.5rem;">
 <h2> Conference Publications </h2>
@@ -75,8 +74,8 @@ ACM CHI Conference on Human Factors in Computing Systems
 </div>
 
 <hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
-
-## Presentations
+<h2> Presentations </h2>
+<!-- ## Presentations -->
 
 <p style="margin-top: 1rem; font-size: 0.95rem;">
 <strong>ACM CHI 2024</strong> — Honolulu, Hawaii<br>
