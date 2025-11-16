@@ -11,6 +11,11 @@ classes: wide
 
 <div style="margin-bottom: 3rem; margin-top: 1.5rem;">
 <h2> Conference Publications </h2>
+
+<div style="margin-left: 1.5rem;">
+<img src="/assets/images/geneva-teaser.png" alt="GeneVA Dataset Overview" style="width: 100%; max-width: 600px; margin-bottom: 1rem; border-radius: 4px;">
+</div>
+
 <h3 style="margin-bottom: 1rem;">GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts</h3>
 
 <p style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.95rem;">

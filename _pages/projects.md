@@ -8,6 +8,24 @@ comments: true
 
 <div class="projects-list">
 
+
+<div class="project-card">
+<div class="card-image">
+<img src="/assets/images/geneva_teaser.png" alt="GeneVA Dataset">
+</div>
+<div class="card-content">
+<h3>GeneVA: Human Annotations for Generative Video Quality</h3>
+<p class="card-course">Research Project • WACV 2026</p>
+<p class="card-description">Co-authored dataset capturing human perception of visual quality in AI-generated videos. Implemented end-to-end data pipeline, developed infrastructure, and authored related works section.</p>
+<p class="card-tech">Python • Hugging Face APIs • Perceptual Quality Assessment</p>
+<div class="card-links">
+<a href="https://arxiv.org/abs/2509.08818">arXiv</a>
+<a href="/projects/geneva/">Project Details</a>
+</div>
+</div>
+</div>
+
+
 <div class="project-card">
 <div class="card-image">
 <img src="/assets/images/remesher_teaser.png" alt="Geometry Remesher">
