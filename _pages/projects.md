@@ -8,45 +8,33 @@ comments: true
 
 <!-- Left aligned images with title + course + etc. -->
 <div class="proj"> 
-<img width="200" height="200" src="/assets/images/remesher_teaser.png">
+<img width="200" src="/assets/images/remesher_teaser.png">
 <div class="teaser">
 <h3> Geometry Remesher </h3>
-<text font-color="blue"> Algorithmic Optimization of 3D Meshes </text>
+<text font-color="blue"> Geometric Modeling (graduate level)</text>
 <text class="text"> Implementation of the Alliez et al. remeshing pipeline using Python to generate uniform, high-quality re-triangulations of 3D models. </text>
-<a class="btn" href="https://github.com/mariabeatrizsilva/GeometryRemesher">
-   Code
-</a>
-<a class="btn" href="/geometry-remesher/">
-   Case Study
-</a>
+<p>
+  [<a href="https://github.com/mariabeatrizsilva/GeometryRemesher">Code</a>]
+  [<a href="/geometry-remesher/">Case Study</a>]
+</p>
 </div>
 </div>
 
 <div class="proj"> 
-<img width="200" height="200" src="/assets/images/cup-preview.png">
+<img width="200" src="/assets/images/cup-preview.png">
 <div class="teaser">
 <h3> Murano Glass Cup</h3>
-<text font-color="blue"> CSCI-UA 480: Computer Graphics </text>
-<text class="text">Explaining brieflt the cup </text>
-<a class="btn" href="https://github.com/mariabeatrizsilva/murano">
-   Code
+<text font-color="blue"> Introduction to Computer Graphics </text>
+<text class="text"> A project focused on recreating the look of murano glass and its unique patterns using **procedural texturing** and advanced shading techniques. 
+<p>
+  [<a href="https://github.com/mariabeatrizsilva/murano">Code</a>]
+</p>
 </a>
 </div>
 </div>
 
 <style>
 
-.btn {
-    display: flex; 
-    justify-content: center;
-    flex-direction: row;
-    text-decoration: none;
-    padding: 0.5rem;
-    border: 1px solid #333333;
-    width: 100px;
-    height: 30px;
-    font-size: 10px;
-}
 
 .proj {
     display: flex;
