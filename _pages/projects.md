@@ -14,7 +14,7 @@ comments: true
 </div>
 <div class="card-content">
 <h3>Geometry Remesher</h3>
-<p class="card-course">Geometric Modeling</p>
+<p class="card-course">Geometric Modeling (Graduate Level)</p>
 <p class="card-description">Implementation of the Alliez et al. remeshing pipeline to generate uniform, high-quality re-triangulations of 3D models.</p>
 <p class="card-tech">Python • NumPy • LibIGL</p>
 <div class="card-links">
@@ -27,7 +27,7 @@ comments: true
 
 <div class="project-card">
 <div class="card-image">
-<img src="/assets/images/laplacian_deformer_teaser.png" alt="Laplacian Mesh Deformer">
+<img src="/assets/images/deformer-teaser.png" alt="Laplacian Mesh Deformer">
 </div>
 <div class="card-content">
 <h3>Laplacian Mesh Deformer</h3>
