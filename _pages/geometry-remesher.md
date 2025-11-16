@@ -67,7 +67,7 @@ Map the new 2D triangulation back to 3D space using the inverse of the harmonic 
 
 
 <div align="center">
-<img src="examples/3_steps.png" alt="Steps of Remeshing (Front View)" width="45%">
+<img src="/assets/images/3_steps.png" alt="Steps of Remeshing (Front View)" width="45%">
 <p><em> Mask mesh and corresponding 2d representation through the main steps of remeshing. From left to right: Harmonic Parameterization, Area Map Generation, Sampled from Area map  </em></p>
 </div>
 
@@ -103,8 +103,8 @@ The remesher successfully transforms irregular input meshes into clean, uniform 
 
 
 <div align="center">
-<img src="examples/dithering_effect_camel.png" alt="dithering_effect_camel" width="41%">
-<img src="examples/grid_size_camel.png" alt="grid_size_camel" width="49%">
+<img src="/assets/images/dithering_effect_camel.png" alt="dithering_effect_camel" width="41%">
+<img src="/assets/images/grid_size_camel.png" alt="grid_size_camel" width="49%">
 <p><em> Exploring different parameters for remeshing. In the left image, I tried dithering according to the area map (top) and uniform dithering (bottom). 
   In the right image, I remeshed the camel with different grid sizes (different number of samples to be dithered).</em></p>
 </div>
