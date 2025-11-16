@@ -6,152 +6,168 @@ author_profile: true
 comments: true
 ---
 
-<div class="projects-container">
+<div class="projects-grid">
 
-<div class="project-item">
-<div class="project-image">
+<div class="project-card">
+<div class="card-image">
 <img src="/assets/images/remesher_teaser.png" alt="Geometry Remesher">
 </div>
-<div class="project-content">
+<div class="card-content">
 <h3>Geometry Remesher</h3>
-<p class="project-course">Geometric Modeling (graduate level)</p>
-<p class="project-description">Implementation of the Alliez et al. remeshing pipeline using Python to generate uniform, high-quality re-triangulations of 3D models.</p>
-<p class="project-tech">Tech: Python, NumPy, LibIGL</p>
-<div class="project-links">
+<p class="card-course">Geometric Modeling</p>
+<p class="card-description">Implementation of the Alliez et al. remeshing pipeline to generate uniform, high-quality re-triangulations of 3D models.</p>
+<p class="card-tech">Python • NumPy • LibIGL</p>
+<div class="card-links">
 <a href="https://github.com/mariabeatrizsilva/GeometryRemesher">GitHub</a>
 <a href="/projects/geometry-remesher/">Case Study</a>
 </div>
 </div>
 </div>
 
-<div class="project-item">
-<div class="project-image">
+<div class="project-card">
+<div class="card-image">
 <img src="/assets/images/cup-preview.png" alt="Murano Glass Cup">
 </div>
-<div class="project-content">
+<div class="card-content">
 <h3>Murano Glass Cup</h3>
-<p class="project-course">Introduction to Computer Graphics</p>
-<p class="project-description">A project focused on recreating the look of murano glass and its unique patterns using procedural texturing and advanced shading techniques.</p>
-<p class="project-tech">Tech: WebGL, Procedural texturing, JavaScript</p>
-<div class="project-links">
+<p class="card-course">Intro to Computer Graphics</p>
+<p class="card-description">Recreating murano glass and its unique patterns using procedural texturing and advanced shading techniques.</p>
+<p class="card-tech">OpenGL • GLSL</p>
+<div class="card-links">
 <a href="https://github.com/mariabeatrizsilva/murano">GitHub</a>
 </div>
 </div>
 </div>
 
-<!-- Add more projects here -->
-<!-- <div class="project-item">
-<div class="project-image">
-<img src="/assets/images/placeholder.png" alt="Project Title">
+<!-- Template for more projects -->
+<div class="project-card">
+<div class="card-image">
+<img src="/assets/images/placeholder.png" alt="Project">
 </div>
-<div class="project-content">
-<h3>Your Next Project</h3>
-<p class="project-course">Context or course name</p>
-<p class="project-description">Description of what this project does and why it's cool.</p>
-<p class="project-tech">Tech: Your, Tech, Stack</p>
-<div class="project-links">
-<a href="https://github.com/yourusername/project">GitHub</a>
+<div class="card-content">
+<h3>Project Title</h3>
+<p class="card-course">Context</p>
+<p class="card-description">Brief description of what this project does.</p>
+<p class="card-tech">Tech • Stack</p>
+<div class="card-links">
+<a href="#">GitHub</a>
 </div>
 </div>
-</div> -->
+</div>
 
 </div>
 
 <style>
-.projects-container {
-    max-width: 800px;
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 20px 0;
 }
 
-.project-item {
+.project-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
-    gap: 30px;
-    margin-bottom: 60px;
-    padding-bottom: 60px;
-    border-bottom: 1px solid #e0e0e0;
+    flex-direction: column;
+    height: 100%;
 }
 
-.project-item:last-child {
-    border-bottom: none;
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.project-image {
-    flex-shrink: 0;
-    width: 250px;
-}
-
-.project-image img {
+.card-image {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
+    height: 200px;
+    overflow: hidden;
+    background: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.project-content {
-    flex: 1;
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 8px;
+    flex-grow: 1;
 }
 
-.project-content h3 {
-    margin: 0 0 4px 0;
-    font-size: 1.4rem;
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
     font-weight: 600;
+    color: #333;
 }
 
-.project-course {
-    font-size: 0.9rem;
-    color: #666;
+.card-course {
+    font-size: 0.85rem;
+    color: #888;
     font-style: italic;
     margin: 0;
 }
 
-.project-description {
-    margin: 8px 0;
-    line-height: 1.6;
-    color: #444;
+.card-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+    margin: 4px 0;
+    flex-grow: 1;
 }
 
-.project-tech {
+.card-tech {
     font-family: 'Courier New', monospace;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #666;
-    margin: 4px 0 12px 0;
+    margin: 8px 0 4px 0;
 }
 
-.project-links {
+.card-links {
     display: flex;
-    gap: 12px;
+    gap: 8px;
     flex-wrap: wrap;
+    margin-top: 8px;
 }
 
-.project-links a {
+.card-links a {
     display: inline-block;
-    padding: 6px 14px;
+    padding: 6px 12px;
     border: 1px solid #333;
-    border-radius: 3px;
+    border-radius: 4px;
     text-decoration: none;
     color: #333;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     transition: all 0.2s ease;
 }
 
-.project-links a:hover {
+.card-links a:hover {
     background: #333;
     color: #fff;
 }
 
-/* Mobile responsive */
+/* Responsive - single column on mobile */
 @media (max-width: 768px) {
-    .project-item {
-        flex-direction: column;
+    .projects-grid {
+        grid-template-columns: 1fr;
         gap: 20px;
-        margin-bottom: 40px;
-        padding-bottom: 40px;
     }
     
-    .project-image {
-        width: 100%;
+    .card-image {
+        height: 180px;
     }
 }
 </style>
