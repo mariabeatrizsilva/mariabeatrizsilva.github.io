@@ -59,7 +59,18 @@ comments: true
 </div>
 
 <style>
+/* Override theme container constraints */
+.page__content {
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+.archive {
+    padding: 0 !important;
+}
+
 .projects-list {
+    width: 100%;
     max-width: 100%;
     margin: 0;
     padding: 0;

@@ -14,14 +14,28 @@ tags:
   - Computational Geometry
 ---
 <style>
-.page__hero--overlay {
-    max-height: 400px;
+/* Target the header image specifically */
+.page__hero {
+    max-height: 350px !important;
+    overflow: hidden;
 }
 
 .page__hero-image {
+    max-height: 350px !important;
     object-fit: cover;
 }
+
+/* Alternative: if the above doesn't work, try these */
+/* header.page__hero--overlay {
+    max-height: 350px !important;
+}
+
+.page__hero--overlay .page__hero-image {
+    max-height: 350px !important;
+} */
 </style>
+<!-- <img src="/assets/images/remesher_preview.png" alt="Remesher visualization" style="max-width: 700px; width: 100%; border-radius: 6px; margin: 0 auto 2rem auto; display: block;"> -->
+
 
 # Geometry Remesher
 
