@@ -38,7 +38,7 @@ This implementation is based on course content from _Professor Daniele Panozzo (
 <div style="display: flex; gap: 10px; margin: 2rem 0; flex-wrap: wrap; justify-content: center;">
   <div style="flex: 1; min-width: 280px; max-width: 350px;">
     <video width="100%" controls autoplay loop muted playsinline style="border-radius: 4px;">
-      <source src="/assets/videos/hand-move.mp4" type="video/mp4">
+      <source src="/assets/images/hand-move.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <p style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.5rem; font-style: italic;">
@@ -48,7 +48,7 @@ This implementation is based on course content from _Professor Daniele Panozzo (
   
   <div style="flex: 1; min-width: 280px; max-width: 350px;">
     <video width="100%" controls autoplay loop muted playsinline style="border-radius: 4px;">
-      <source src="/assets/videos/woody-dance.mp4" type="video/mp4">
+      <source src="/assets/images/woody-dance.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <p style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.5rem; font-style: italic;">
