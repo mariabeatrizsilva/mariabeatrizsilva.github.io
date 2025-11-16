@@ -77,7 +77,7 @@ comments: true
 
 <div class="project-card">
 <div class="card-image">
-<img src="/assets/images/cup-preview.png" alt="Murano Glass Cup">
+<img src="/assets/images/murano-preview.png" alt="Murano Glass Cup">
 </div>
 <div class="card-content">
 <h3>Murano Glass Cup</h3>
