@@ -60,18 +60,18 @@ comments: true
 
 <style>
 .projects-list {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px 0;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
 }
 
 .project-card {
     background: #fff;
     border: 1px solid #e0e0e0;
-    border-radius: 12px;
+    border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: row;
@@ -79,12 +79,12 @@ comments: true
 }
 
 .project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .card-image {
-    width: 280px;
+    width: 240px;
     flex-shrink: 0;
     background: #f8f8f8;
     display: flex;
@@ -100,55 +100,55 @@ comments: true
 }
 
 .card-content {
-    padding: 24px 28px;
+    padding: 20px 24px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     flex-grow: 1;
 }
 
 .card-content h3 {
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #333;
 }
 
 .card-course {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: #888;
     font-style: italic;
     margin: 0;
 }
 
 .card-description {
-    font-size: 0.95rem;
-    line-height: 1.6;
+    font-size: 0.85rem;
+    line-height: 1.5;
     color: #555;
-    margin: 6px 0;
+    margin: 4px 0;
 }
 
 .card-tech {
     font-family: 'Courier New', monospace;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: #666;
-    margin: 4px 0 12px 0;
+    margin: 4px 0 10px 0;
 }
 
 .card-links {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
 }
 
 .card-links a {
     display: inline-block;
-    padding: 8px 18px;
+    padding: 6px 14px;
     background: #f0f0f0;
-    border-radius: 20px;
+    border-radius: 16px;
     text-decoration: none;
     color: #333;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 500;
     transition: all 0.2s ease;
 }
@@ -167,11 +167,11 @@ comments: true
     
     .card-image {
         width: 100%;
-        height: 200px;
+        height: 180px;
     }
     
     .card-content {
-        padding: 20px;
+        padding: 16px;
     }
 }
 </style>
