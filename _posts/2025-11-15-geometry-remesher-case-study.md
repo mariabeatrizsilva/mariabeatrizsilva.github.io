@@ -36,9 +36,6 @@ tags:
 </style>
 <!-- <img src="/assets/images/remesher_preview.png" alt="Remesher visualization" style="max-width: 700px; width: 100%; border-radius: 6px; margin: 0 auto 2rem auto; display: block;"> -->
 
-
-# Geometry Remesher
-
 ## What it does
 
 This project takes 3D meshes and cleans them up. Sometimes meshes can be messy—triangles of all different sizes, weird angles, uneven distribution. This remesher reorganizes everything into nice, uniform, equilateral triangles.
