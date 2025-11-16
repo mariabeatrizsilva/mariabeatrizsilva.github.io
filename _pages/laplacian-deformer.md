@@ -37,7 +37,7 @@ This implementation is based on course content from _Professor Daniele Panozzo (
 
 <div style="display: flex; gap: 10px; margin: 2rem 0; flex-wrap: wrap; justify-content: center;">
   <div style="flex: 1; min-width: 280px; max-width: 350px;">
-    <video width="100%" controls autoplay loop muted playsinline style="border-radius: 4px;">
+    <video width="100%" controls>
       <source src="/assets/images/hand-move.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -47,7 +47,7 @@ This implementation is based on course content from _Professor Daniele Panozzo (
   </div>
   
   <div style="flex: 1; min-width: 280px; max-width: 350px;">
-    <video width="100%" controls autoplay loop muted playsinline style="border-radius: 4px;">
+    <video width="100%" controls>
       <source src="/assets/images/woody-dance.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
