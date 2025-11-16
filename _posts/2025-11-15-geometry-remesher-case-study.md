@@ -2,7 +2,7 @@
 title: "Geometry Remesher"
 excerpt: "Making messy 3D meshes nice and uniform again."
 layout: single
-permalink: /projects/geometry-remesher/
+permalink: /projects/geometry-remesher1/
 date: 2025-11-15 10:00:00 -0400 
 header:
   image: /assets/images/remesher_preview.png 
