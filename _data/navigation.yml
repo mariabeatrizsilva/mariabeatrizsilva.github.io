@@ -2,12 +2,12 @@
 main:
   - title: "About"
     url: /about/
+  - title: "Publications"
+    url: /publications/
   - title: "Selected Projects"
     url: /projects/
   - title: "Blog"
     url: /blog/
-  # - title: "Projects"
-  #   url: /portfolio/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
