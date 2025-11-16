@@ -3,13 +3,14 @@ layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
+classes: wide
 ---
+
+<div style="margin-top: -1rem;">
 
 ## Conference Publications
 
----
-
-<div style="margin-bottom: 3rem;">
+<div style="margin-bottom: 3rem; margin-top: 1.5rem;">
 
 <h3 style="margin-bottom: 1rem;">GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts</h3>
 
@@ -39,7 +40,7 @@ Winter Conference on Applications of Computer Vision (WACV) 2026
 
 </div>
 
----
+<hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
 
 <div style="margin-bottom: 3rem;">
 
@@ -73,7 +74,7 @@ ACM CHI Conference on Human Factors in Computing Systems
 
 </div>
 
----
+<hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
 
 ## Presentations
 
@@ -83,18 +84,13 @@ Co-presented <em>PaleoScan: Low-Cost Easy-to-use High-Volume Fossil Scanning</em
 May 2024
 </p>
 
----
+</div>
 
 <style>
   h3 {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     color: #2c3e50;
-  }
-  
-  hr {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
   }
   
   strong {
