@@ -3,11 +3,9 @@ layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
-
-
+---
 ## Conference Publications
 
----
 <div style="margin-bottom: 3rem;">
 GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts
 <p style="margin-top: 0.5rem; margin-bottom: 0.5rem;">
