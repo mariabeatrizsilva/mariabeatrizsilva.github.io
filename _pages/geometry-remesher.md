@@ -65,6 +65,12 @@ Connect the resampled vertices using 2D Delaunay triangulation, which maximizes 
 ### **5. Inverse Mapping to 3D**
 Map the new 2D triangulation back to 3D space using the inverse of the harmonic parameterization. The result is a clean, uniformly remeshed 3D model that approximates the original geometry with better triangle quality.
 
+
+<div align="center">
+<img src="examples/3_steps.png" alt="Steps of Remeshing (Front View)" width="45%">
+<p><em> Mask mesh and corresponding 2d representation through the main steps of remeshing. From left to right: Harmonic Parameterization, Area Map Generation, Sampled from Area map  </em></p>
+</div>
+
 ---
 
 ## Implementation Details
@@ -91,31 +97,15 @@ Map the new 2D triangulation back to 3D space using the inverse of the harmonic 
 
 ---
 
-## Technical Challenges
-
-**Harmonic Parameterization**: Ensuring the 2D mapping preserves enough geometric information while remaining computationally stable.
-
-**Density Map Accuracy**: Balancing between faithful reproduction of original detail and achieving uniform triangle shapes.
-
-**Boundary Handling**: Managing mesh boundaries during parameterization and ensuring valid triangulation.
-
----
-
 ## Results
 
 The remesher successfully transforms irregular input meshes into clean, uniform triangulations while preserving the overall shape and important geometric features. The quality of output triangles is significantly improved, with most triangles approaching equilateral shape.
 
----
 
-## Future Improvements
+<div align="center">
+<img src="examples/dithering_effect_camel.png" alt="dithering_effect_camel" width="41%">
+<img src="examples/grid_size_camel.png" alt="grid_size_camel" width="49%">
+<p><em> Exploring different parameters for remeshing. In the left image, I tried dithering according to the area map (top) and uniform dithering (bottom). 
+  In the right image, I remeshed the camel with different grid sizes (different number of samples to be dithered).</em></p>
+</div>
 
-- Extend to handle meshes with boundaries more robustly
-- Implement feature-aware remeshing that preserves sharp edges
-- Add support for anisotropic remeshing (elongated triangles aligned with principal curvature directions)
-- Optimize performance for large meshes
-
----
-
-[View on GitHub](https://github.com/mariabeatrizsilva/GeometryRemesher)
-
-**Technologies:** Python • NumPy • SciPy • libigl

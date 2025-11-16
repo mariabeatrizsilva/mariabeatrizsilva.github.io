@@ -85,14 +85,6 @@ Working from a skeleton codebase, I implemented:
 - Analyzed error patterns across query types and complexity levels
 - Conducted detailed error analysis identifying common failure modes
 
-### Technical Challenges
-
-This project required careful handling of:
-- Variable-length structured output generation
-- Balancing between syntactic SQL correctness and semantic query accuracy
-- Evaluation through database execution rather than string matching
-- Working with a flight booking database containing 25 tables
-
 ---
 
 ## Technical Stack
@@ -111,7 +103,3 @@ This project required careful handling of:
 3. **Design Choices Matter**: Systematic experimentation with data processing, tokenization, and architecture decisions significantly impacts performance
 4. **Trade-offs**: Improving robustness to transformed data can be achieved with minimal performance cost on original data
 
----
-
-**Status:** Completed Fall 2025  
-**Course:** Natural Language Processing (Graduate Level), NYU

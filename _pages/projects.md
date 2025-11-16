@@ -19,7 +19,7 @@ comments: true
 <p class="card-tech">Python • NumPy • LibIGL</p>
 <div class="card-links">
 <a href="https://github.com/mariabeatrizsilva/GeometryRemesher">GitHub</a>
-<a href="/projects/geometry-remesher/">Blog Post</a>
+<a href="/projects/geometry-remesher/">Project Details</a>
 </div>
 </div>
 </div>
