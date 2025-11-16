@@ -34,7 +34,7 @@ comments: true
 <h3>Geometry Remesher</h3>
 <p class="card-course">Geometric Modeling (Graduate Level)</p>
 <p class="card-description">Implementation of the Alliez et al. remeshing pipeline to generate uniform, high-quality re-triangulations of 3D models.</p>
-<p class="card-tech">Python • NumPy • LibIGL</p>
+<p class="card-tech">Python • NumPy • libigl</p>
 <div class="card-links">
 <a href="https://github.com/mariabeatrizsilva/GeometryRemesher">GitHub</a>
 <a href="/projects/geometry-remesher/">Project Details</a>
@@ -51,7 +51,7 @@ comments: true
 <h3>Laplacian Mesh Deformer</h3>
 <p class="card-course">Geometric Modeling (Graduate Level)</p>
 <p class="card-description">Interactive 3D mesh deformation system that preserves high-frequency geometric details using multiresolution Laplacian editing and sparse Cholesky decomposition for near real-time performance.</p>
-<p class="card-tech">Python • SciPy • libigl • Sparse Cholesky</p>
+<p class="card-tech">Python • Numpy • libigl • SciPy</p>
 <div class="card-links">
 <a href="https://github.com/mariabeatrizsilva/LaplacianDeformer">GitHub</a>
 <a href="/projects/laplacian-deformer/">Project Details</a>
@@ -86,12 +86,13 @@ comments: true
 <p class="card-tech">OpenGL • GLSL</p>
 <div class="card-links">
 <a href="https://github.com/mariabeatrizsilva/murano">GitHub</a>
+<a href="https://mariabeatrizsilva.github.io/murano/index.html">Play with the cup!</a>
 </div>
 </div>
 </div>
 
 <!-- Template for more projects -->
-<div class="project-card">
+<!-- <div class="project-card">
 <div class="card-image">
 <img src="/assets/images/placeholder.png" alt="Project">
 </div>
@@ -105,7 +106,7 @@ comments: true
 <a href="#">Demo</a>
 </div>
 </div>
-</div>
+</div> -->
 
 </div>
 

@@ -52,6 +52,10 @@ Accepted to Winter Conference on Applications of Computer Vision (WACV) 2026
 
 <h3 style="margin-bottom: 1rem;">PaleoScan: Low-Cost Easy-to-use High-Volume Fossil Scanning</h3>
 
+<div style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+  <img src="/assets/images/paleoscan-teaser.png" alt="PaleoScan Teaser" style="width: 100%; max-width: 1000px; margin-bottom: 0.5rem; border-radius: 4px; display: block;">
+</div>
+
 <p style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.95rem;">
 Silva, C., Piadyk, Y., Rulff, J., Panozzo, D., <strong>Silva, M. B.</strong>, et al. (2024)
 </p>
