@@ -1,17 +1,18 @@
 ---
 title: "Geometry Remesher: Algorithmic Optimization of 3D Meshes"
-excerpt: "Implementation of the Alliez et al. remeshing pipeline using Python and Jupyter Notebooks to generate uniform, high-quality re-triangulations of 3D models."
+excerpt: "Implementation of the Alliez et al. remeshing pipeline using Python to generate uniform, high-quality re-triangulations of 3D models."
+layout: single # Use 'single' layout for posts
+permalink: /projects/geometry-remesher/ # Define a clean URL under /projects/
+# Add a date field required by posts
+date: 2025-11-15 10:00:00 -0400 
 header:
   image: /assets/images/remesher_preview.png 
-  teaser: /assets/images/remesher_teaser.jpg 
+  teaser: /assets/images/remesher_teaser.png 
 categories:
   - Portfolio
 tags:
   - Python
   - Computational Geometry
-  - Jupyter
-  - Algorithm Implementation
-  - igl (libigl)
 ---
 
 # Geometry Remesher: Algorithmic Optimization of 3D Meshes

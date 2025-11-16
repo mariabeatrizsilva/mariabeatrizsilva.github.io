@@ -15,8 +15,7 @@ comments: true
 <text class="text"> Implementation of the Alliez et al. remeshing pipeline using Python to generate uniform, high-quality re-triangulations of 3D models. </text>
 <p>
   [<a href="https://github.com/mariabeatrizsilva/GeometryRemesher">Code</a>]
-  [<a href="/geometry-remesher/">Case Study</a>]
-</p>
+[<a href="/projects/geometry-remesher/">Case Study</a>]</p>
 </div>
 </div>
 
