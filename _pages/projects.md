@@ -27,6 +27,22 @@ comments: true
 
 <div class="project-card">
 <div class="card-image">
+<img src="/assets/images/laplacian_deformer_teaser.png" alt="Laplacian Mesh Deformer">
+</div>
+<div class="card-content">
+<h3>Laplacian Mesh Deformer</h3>
+<p class="card-course">Geometric Modeling (Graduate Level)</p>
+<p class="card-description">Interactive 3D mesh deformation system that preserves high-frequency geometric details using multiresolution Laplacian editing and sparse Cholesky decomposition for near real-time performance.</p>
+<p class="card-tech">Python • SciPy • libigl • Sparse Cholesky</p>
+<div class="card-links">
+<a href="https://github.com/mariabeatrizsilva/LaplacianDeformer">GitHub</a>
+<a href="/projects/laplacian-deformer/">Project Details</a>
+</div>
+</div>
+</div>
+
+<div class="project-card">
+<div class="card-image">
 <img src="/assets/images/fine_tuning_llm_teaser.png" alt="Fine-Tuning Language Models">
 </div>
 <div class="card-content">
