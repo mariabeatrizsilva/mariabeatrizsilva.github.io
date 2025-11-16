@@ -67,7 +67,7 @@ Map the new 2D triangulation back to 3D space using the inverse of the harmonic 
 
 
 <div align="center">
-<img src="/assets/images/3_steps.png" alt="Steps of Remeshing (Front View)" width="45%">
+<img src="/assets/images/3_steps.png" alt="Steps of Remeshing (Front View)" width="60%">
 <p><em> Mask mesh and corresponding 2d representation through the main steps of remeshing. From left to right: Harmonic Parameterization, Area Map Generation, Sampled from Area map  </em></p>
 </div>
 

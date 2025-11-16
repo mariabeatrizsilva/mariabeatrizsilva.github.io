@@ -9,7 +9,7 @@ comments: true
 <div class="projects-list">
 
 
-<div class="project-card">
+<!-- <div class="project-card">
 <div class="card-image">
 <img src="/assets/images/geneva_teaser.png" alt="GeneVA Dataset">
 </div>
@@ -24,7 +24,7 @@ comments: true
 </div>
 </div>
 </div>
-
+ -->
 
 <div class="project-card">
 <div class="card-image">
