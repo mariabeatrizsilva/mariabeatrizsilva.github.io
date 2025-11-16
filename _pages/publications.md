@@ -8,18 +8,18 @@ classes: wide
 
 <div style="margin-top: -1rem;">
 
-## Conference Publications
+<!-- ## Conference Publications -->
 
 <div style="margin-bottom: 3rem; margin-top: 1.5rem;">
-
+<h2> Conference Publications </h2>
 <h3 style="margin-bottom: 1rem;">GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts</h3>
 
 <p style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.95rem;">
-Kang, J., <strong>Silva, M.</strong>, Sangkloy, P., Chen, K., Williams, N., & Sun, Q. (2025)
+Kang, J., <strong>Silva, M.</strong>, Sangkloy, P., Chen, K., Williams, N., & Sun, Q. (Arxiv Preprint, 2025)
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-style: italic; font-size: 0.95rem;">
-Winter Conference on Applications of Computer Vision (WACV) 2026
+Accepted to Winter Conference on Applications of Computer Vision (WACV) 2026
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem;">
