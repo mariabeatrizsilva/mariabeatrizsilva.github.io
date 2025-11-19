@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Maria Beatriz Silva"
   avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a Presidential Honors Scholar studying Computer Science at NYU Courant with a minor in Mathematics. As a Research Assistant at NYU’s Immersive Computing Lab, I work on problems at the intersection of computer graphics, human perception, and machine learning. My work is driven by the commitment to ensure technology is developed with the needs of its users in mind and by the desire to reshape who gets to participate in and benefit from technological innovation."
+  bio              : "I am a Presidential Honors Scholar studying Computer Science at NYU's Courant Institute with a minor in Mathematics. As a Research Assistant at NYU’s Immersive Computing Lab, I work on problems at the intersection of computer graphics, human perception, and machine learning. My work is driven by the commitment to ensure technology is developed with the needs of its users in mind and by the desire to reshape who gets to participate in and benefit from technological innovation."
   location         : "NYC"
   # email            : "mariasilva@nyu.edu"
   links:
