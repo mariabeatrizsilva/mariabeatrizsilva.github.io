@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "_data"
+		},
+		{
+			"path": "_pages"
+		},
+		{
+			"path": "assets"
+		},
+		{
+			"path": "_posts"
+		},
+		{
+			"path": "_projects"
+		}
+	],
+	"settings": {}
+}
