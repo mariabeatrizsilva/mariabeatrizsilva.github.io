@@ -24,7 +24,7 @@ header:
 **Course Project for Geometric Modeling (Graduate Level)**  
 **Spring 2025**
 
-[📂 GitHub Repository](https://github.com/mariabeatrizsilva/GeometryRemesher)
+[📂 GitHub Repository](https://github.com/mariabeatrizsilva/LaplacianDeformer)
 
 ---
 
