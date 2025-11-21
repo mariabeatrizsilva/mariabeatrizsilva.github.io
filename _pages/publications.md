@@ -33,15 +33,15 @@ Accepted to Winter Conference on Applications of Computer Vision (WACV) 2026
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong>Abstract:</strong> This work introduces GeneVA, a novel dataset capturing human perception of visual quality in AI-generated videos, addressing the critical need for perceptual evaluation metrics in generative video models.
+<strong>Abstract:</strong> The first large-scale dataset of human-annotated artifacts in AI-generated videos, containing 16,451 annotations across 16,356 videos with per-frame bounding boxes, descriptions, and quality ratings. This work addresses the critical need for human-in-the-loop feedback for generative video models.
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>My Contributions:</strong></p>
 <ul style="margin-left: 1.5rem; margin-top: 0; font-size: 0.95rem;">
-  <li>Implemented end-to-end data pipeline to acquire videos using Hugging Face APIs</li>
-  <li>Developed custom file mapping infrastructure for dataset organization</li>
-  <li>Conducted comprehensive literature review on perceptual quality assessment</li>
-  <li>Authored the related works section</li>
+  <li>Designed and implemented the complete data acquisition pipeline, developing a custom Python system to extract videos from 2.7TB dataset under HPC storage constraints </li>
+  <li>Conducted video analysis and literature review that informed the artifact taxonomy development</li>
+  <li>Proposed key study design decision to show prompts to annotators, enabling measurement of both prompt-video alignment and artifact perception</li>
+
 </ul>
 
 </div>
