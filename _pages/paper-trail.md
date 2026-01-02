@@ -25,7 +25,7 @@ header:
 **Fall 2025**
 
 [📂 GitHub Repository](https://github.com/mariabeatrizsilva/AutoDDG-Enhanced)
-
+[📊 Interactive Description Viewer](https://mariabeatrizsilva.github.io/AutoDDG-Enhanced/)
 
 Automated dataset description systems help researchers discover and evaluate datasets, but they typically rely solely on statistical profiling of the data itself—missing critical contextual information about collection methodology, intended use cases, and known limitations that appear in scientific literature.
 
