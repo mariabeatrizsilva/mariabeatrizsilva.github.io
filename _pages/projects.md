@@ -26,6 +26,25 @@ comments: true
 </div>
  -->
 
+ <div class="project-card">
+<div class="card-image">
+<img src="/assets/images/pipeline.png" alt="PaperTrail">
+</div>
+<div class="card-content">
+<h3>PaperTrail</h3>
+<p class="card-course">Natural Language Processing (Graduate Level)</p>
+<p class="card-description">A fork of AutoDDG (an automated dataset description generator) that enhances dataset descriptions by incorporating contextual information from citing research papers.</p>
+<p class="card-tech">NLP • Python </p>
+<div class="card-links">
+<a href="https://github.com/mariabeatrizsilva/AutoDDG-Enhanced">GitHub</a>
+<a href="/projects/paper-trail/">Project Details</a>
+<a href="https://github.com/mariabeatrizsilva/AutoDDG-Enhanced/blob/main/Project_Poster.pdf">Poster</a>
+<a href="https://github.com/mariabeatrizsilva/AutoDDG-Enhanced/blob/main/Project_Writeup.pdf">Paper</a>
+</div>
+</div>
+</div>
+
+
 <div class="project-card">
 <div class="card-image">
 <img src="/assets/images/remesher_teaser.png" alt="Geometry Remesher">
