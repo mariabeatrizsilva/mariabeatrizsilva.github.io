@@ -5,9 +5,6 @@ permalink: /about/
 author_profile: true
 classes: wide
 ---
-
-<div style="margin-top: -1rem;">
-
 ## Research Motivation
 
 I'm motivated by a fundamental gap in how we develop visual technologies: we build increasingly sophisticated systems without deeply understanding how humans actually perceive and interact with them, or whether they truly serve users' needs. My work bridges this gap by grounding graphics and AI systems in perceptual principles and human-centered considerations.
@@ -32,5 +29,5 @@ As an Education Fellow for Emerging Leaders in Technology and Engineering (ELiTE
 
 As someone who has benefitted greatly from mentorship myself, particularly through programs like Google CSRMP and the MLT Career Preparation Program, I'd like to thank all of my previous mentors for their support. 
 
-</div>
+
 <!-- Outside of research, you'll find me exploring NYC's art museums and learning new languages (currently working on Italian!) -->
