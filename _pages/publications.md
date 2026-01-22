@@ -21,7 +21,7 @@ classes: wide
 </div>
 
 <p style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.95rem;">
-Kang, J., <strong>Silva, M.</strong>, Sangkloy, P., Chen, K., Williams, N., & Sun, Q. (arXiv Preprint, 2025)
+Kang, J., <strong>Silva, M. B.</strong>, Sangkloy, P., Chen, K., Williams, N., & Sun, Q. (arXiv Preprint, 2025)
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-style: italic; font-size: 0.95rem;">
