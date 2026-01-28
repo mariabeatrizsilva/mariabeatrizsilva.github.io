@@ -35,9 +35,13 @@ The questions that drive me: How do we design rendering algorithms that align wi
 
 <h2> Publications </h2>
 
+<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
 <i>Kang, J., <strong>Silva, M.B.</strong>, Sangkloy, P., Chen, K., Williams, N., & Sun, Q. </i>(2025). GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts. Accepted to WACV 2026.
+</p>
 
+<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
 <i>Silva, C., Piadyk, Y., Rulff, J., Panozzo, D., <strong>Silva, M.B.</strong>, et al. </i>(2024). PaleoScan: Low-Cost Easy-to-use High-Volume Fossil Scanning. In *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems* (pp. 1-16).
+</p>
 
 <h2>Teaching & Mentorship</h2>
 

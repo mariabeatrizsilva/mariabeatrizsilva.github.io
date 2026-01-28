@@ -9,7 +9,7 @@ classes: wide
 <div style="margin-top: -1rem;">
 
 
-<div style="margin-bottom: 3rem; margin-top: 1.5rem;">
+<div style="margin-bottom: 2rem; margin-top: 1.5rem;">
 <h2> Conference Publications </h2>
 
 
@@ -49,7 +49,7 @@ Accepted to Winter Conference on Applications of Computer Vision (WACV) 2026
 
 <hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
 
-<div style="margin-bottom: 3rem;">
+<div style="margin-bottom: 2rem;">
 
 <h3 style="margin-bottom: 1rem;">PaleoScan: Low-Cost Easy-to-use High-Volume Fossil Scanning</h3>
 
@@ -81,8 +81,6 @@ ACM CHI Conference on Human Factors in Computing Systems
   <li>Helped conceptualize the interface design for PaleoDP, the data processing and annotation pipeline</li>
   <li>Directed and produced the video submission</li>
   <li>Co-presented the paper at ACM CHI 2024</li>
-</ul>
-
 </div>
 
 <hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
