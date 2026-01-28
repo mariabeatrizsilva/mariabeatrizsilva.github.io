@@ -30,10 +30,7 @@ Accepted to Winter Conference on Applications of Computer Vision (WACV) 2026
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem;">
   <a href="https://arxiv.org/abs/2509.08818" style="margin-right: 1.5rem; text-decoration: none;">📝 arXiv</a>
-</p>
-
-<p style="margin-left: 1.5rem; margin-bottom: 1rem;">
-  <a href="https://youtu.be/toQTET43f9I" style="margin-right: 1.5rem; text-decoration: none;">🎥 Video Presentation</a>
+    <a href="https://youtu.be/toQTET43f9I" style="margin-right: 1.5rem; text-decoration: none;">🎥 Video Presentation</a>
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">

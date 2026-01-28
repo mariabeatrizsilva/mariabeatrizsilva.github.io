@@ -19,7 +19,7 @@ The questions that drive me: How do we design rendering algorithms that align wi
 
 ## Publications
 
-_Kang, J., **Silva, M.**, Sangkloy, P., Chen, K., Williams, N., & Sun, Q._(2025). GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts. Accepted to WACV 2026.
+_Kang, J., **Silva, M.B.**, Sangkloy, P., Chen, K., Williams, N., & Sun, Q._(2025). GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts. Accepted to WACV 2026.
 
 _Silva, C., Piadyk, Y., Rulff, J., Panozzo, D., **Silva, M.B.**, et al._(2024). PaleoScan: Low-Cost Easy-to-use High-Volume Fossil Scanning. In *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems* (pp. 1-16).
 
