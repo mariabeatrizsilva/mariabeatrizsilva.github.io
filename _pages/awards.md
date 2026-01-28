@@ -50,6 +50,3 @@ classes: wide
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
 <strong><a href="https://research.google/programs-and-events/past-programs/csrmp/"> Google Computer Science Research Mentorship Program (CSRMP)</a> </strong> (2023) 
 </p>
-
-</div>
-</div>
