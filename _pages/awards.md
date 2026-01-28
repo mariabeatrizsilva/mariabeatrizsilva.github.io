@@ -27,7 +27,7 @@ classes: wide
 <div style="margin-bottom: 1.5rem; margin-top: 1rem;">
 <h2> University Honors </h2>
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://cas.nyu.edu/academic-programs/honors-programs/cas-presidential-scholars-program.html"/>Presidential Honors Scholar</a> </strong> (2023--Present) 
+<strong><a href="https://cas.nyu.edu/academic-programs/honors-programs/cas-presidential-scholars-program.html">Presidential Honors Scholar</a> </strong> (2023-Present) 
 </p>
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
 <strong>Dean's List</strong> (All semesters)
@@ -41,11 +41,11 @@ classes: wide
 <h2> Professional Programs & Memberships </h2>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong>Member of Association for Computing Machinery (ACM)</strong> (2024--Present) 
+<strong>Member of Association for Computing Machinery (ACM)</strong> (2024-Present) 
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://mlt.org/career-prep/"> Management Leadership for Tomorrow Career Preparation Program </a> </strong> (2024--Present)
+<strong><a href="https://mlt.org/career-prep/"> Management Leadership for Tomorrow Career Preparation Program </a> </strong> (2024-Present)
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
 <strong><a href="https://research.google/programs-and-events/past-programs/csrmp/"> Google Computer Science Research Mentorship Program (CSRMP)</a> </strong> (2023) 
