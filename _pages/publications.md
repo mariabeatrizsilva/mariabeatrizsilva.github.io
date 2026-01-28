@@ -81,8 +81,6 @@ ACM CHI Conference on Human Factors in Computing Systems
   <li>Helped conceptualize the interface design for PaleoDP, the data processing and annotation pipeline</li>
   <li>Directed and produced the video submission</li>
   <li>Co-presented the paper at ACM CHI 2024</li>
-</ul>
-
 </div>
 
 <hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
