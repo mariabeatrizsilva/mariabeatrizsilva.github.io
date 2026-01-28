@@ -5,12 +5,18 @@ permalink: /about/
 author_profile: true
 classes: wide
 ---
+<div style="margin-top: -1rem;">
+
+
+<div style="margin-bottom: 3rem; margin-top: 1.5rem;">
+
 ## Research Motivation
 
 I'm motivated by a fundamental gap in how we develop visual technologies: we build increasingly sophisticated systems without deeply understanding how humans actually perceive and interact with them, or whether they truly serve users' needs. My work bridges this gap by grounding graphics and AI systems in perceptual principles and human-centered considerations.
 
 The questions that drive me: How do we design rendering algorithms that align with human visual perception rather than abstract technical metrics? How can we build visual systems that are designed for the diverse ways people actually see and interact with technology?
 
+</div>
 ## Current Research
 
 **Perceptually-Guided Temporal Antialiasing** (Honors Thesis): I'm investigating the relationship between temporal antialiasing (TAA) parameters and perceptual quality metrics. TAA is widely used in real-time rendering, but parameter tuning typically relies on heuristics rather than perceptual grounding. This work aims to find a relationship between TAA parameters and perceptual metrics, with the ultimate goal of optimizing TAA to directly target perceptual quality improvements.
@@ -29,5 +35,6 @@ As an Education Fellow for Emerging Leaders in Technology and Engineering (ELiTE
 
 As someone who has benefitted greatly from mentorship myself, particularly through programs like Google CSRMP and the MLT Career Preparation Program, I'd like to thank all of my previous mentors for their support. 
 
+</div>
 
 <!-- Outside of research, you'll find me exploring NYC's art museums and learning new languages (currently working on Italian!) -->
