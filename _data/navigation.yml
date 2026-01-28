@@ -4,8 +4,10 @@ main:
     url: /about/
   - title: "Publications"
     url: /publications/
-  - title: "Selected Projects"
+  - title: "Projects"
     url: /projects/
+  - title: "Awards"
+    url: /awards/
   - title: "Blog"
     url: /blog/
   # - title: "Sample Posts"
