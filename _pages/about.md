@@ -40,7 +40,7 @@ The questions that drive me: How do we design rendering algorithms that align wi
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<i>Silva, C., Piadyk, Y., Rulff, J., Panozzo, D., <strong>Silva, M.B.</strong>, et al. </i>(2024). PaleoScan: Low-Cost Easy-to-use High-Volume Fossil Scanning. In *Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems* (pp. 1-16).
+<i>Silva, C., Piadyk, Y., Rulff, J., Panozzo, D., <strong>Silva, M.B.</strong>, et al. </i>(2024). PaleoScan: Low-Cost Easy-to-use High-Volume Fossil Scanning. In <i> Proceedings of the 2024 CHI Conference on Human Factors in Computing Systems </i> (pp. 1-16).
 </p>
 
 <h2>Teaching & Mentorship</h2>
