@@ -38,7 +38,7 @@ comments: true
 <div class="card-links">
 <a href="https://github.com/saravargas88/nightwalk">GitHub</a>
 <a href="/projects/nightwalk/">Project Details</a>
-<!-- <a href="https://github.com/mariabeatrizsilva/AutoDDG-Enhanced/blob/main/Project_Writeup.pdf">Paper</a> -->
+<a href="https://github.com/saravargas88/nightwalk/blob/main/NightWalk_Midterm_Report-5.pdf">Paper</a>
 </div>
 </div>
 </div>
