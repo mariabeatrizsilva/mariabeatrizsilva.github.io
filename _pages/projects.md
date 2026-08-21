@@ -26,7 +26,24 @@ comments: true
 </div>
  -->
 
- <div class="project-card">
+<div class="project-card">
+<div class="card-image">
+<img src="/assets/images/pipeline.png" alt="PaperTrail">
+</div>
+<div class="card-content">
+<h3>PaperTrail</h3>
+<p class="card-course">Computer Vision for Science and Engineering (Graduate Level)</p>
+<p class="card-description"> NightWalk : Predicting Nighttime Luminesce from Daytime SVI.</p>
+<p class="card-tech">CV • Python • HCI</p>
+<div class="card-links">
+<a href="https://github.com/saravargas88/nightwalk">GitHub</a>
+<a href="/projects/nightwalk/">Project Details</a>
+<!-- <a href="https://github.com/mariabeatrizsilva/AutoDDG-Enhanced/blob/main/Project_Writeup.pdf">Paper</a> -->
+</div>
+</div>
+</div>
+
+<div class="project-card">
 <div class="card-image">
 <img src="/assets/images/pipeline.png" alt="PaperTrail">
 </div>
