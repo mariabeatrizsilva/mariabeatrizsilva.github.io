@@ -22,10 +22,20 @@ classes: wide
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
 <strong><a href="https://www.aspirations.org/news/award-programs/ncwit-announces-2026-aic-collegiate-award-recipients">NCWIT Aspirations in Computing Collegiate Award </a> </strong> (2026) <br> Honorable Mention
 </p>
+
+<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
+<strong><a href="https://www.pbk.org"> Phi Beta Kappa Society </a> </strong> (2026) <br> Member
+</p>
+
 </div>
 
 <div style="margin-bottom: 1.5rem; margin-top: 1rem;">
 <h2> University Honors </h2>
+
+<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
+<strong>Summa Cum Laude </strong> 
+</p>
+
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
 <strong><a href="https://cas.nyu.edu/academic-programs/honors-programs/cas-presidential-scholars-program.html">Presidential Honors Scholar</a> </strong> 
 </p>
