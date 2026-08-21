@@ -28,7 +28,7 @@ comments: true
 
 <div class="project-card">
 <div class="card-image">
-<img src="/assets/images/pipeline.png" alt="PaperTrail">
+<img src="/assets/images/nightwalk-data.png" alt="Nightwalk">
 </div>
 <div class="card-content">
 <h3>PaperTrail</h3>
