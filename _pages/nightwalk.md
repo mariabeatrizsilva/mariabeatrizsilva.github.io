@@ -36,7 +36,7 @@ NightWalk works in two stages. First, a backbone model is trained to recognize l
 
 <div style="display: flex; gap: 10px; margin: 2rem 0; flex-wrap: wrap; justify-content: center;">
   <div style="flex: 1; min-width: 280px; max-width: 500px;">
-    <img src="/assets/images/nightwalk-pipeline" width="100%" />
+    <img src="/assets/images/nightwalk-pipeline.png" width="100%" />
     <p style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.5rem; font-style: italic;">
       NightWalk pipeline: feature detection → brightness prediction
     </p>
@@ -45,6 +45,7 @@ NightWalk works in two stages. First, a backbone model is trained to recognize l
 
 We first tested whether object counts alone (e.g., "how many streetlights are visible") could predict nighttime brightness. They couldn't — a linear baseline on these counts explained almost none of the variation (R² = 0.08). This motivated the full visual model, which explains nearly half the variance (R² = 0.46), showing that daytime images do contain real signal about nighttime lighting, but it's embedded in the full scene rather than reducible to simple counts.
 
+## Ablation Study
 We also ran a controlled ablation comparing backbone initializations — standard ImageNet pretraining, self-supervised pretraining on our own street images, and our custom lighting-feature pretraining — to see whether task-specific pretraining would give the model a head start. Counterintuitively, it didn't: standard ImageNet initialization performed best, suggesting that at this dataset size, general-purpose visual features transferred better than features tuned specifically for counting lighting objects.
 
 <div style="display: flex; gap: 10px; margin: 2rem 0; flex-wrap: wrap; justify-content: center;">
@@ -56,6 +57,7 @@ We also ran a controlled ablation comparing backbone initializations — standar
   </div>
 </div>
 
+## Application 
 Finally, we built a prototype route planner for Greenwich Village that uses NightWalk's predictions as edge weights in a walking graph, recommending better-lit paths at the cost of a modest detour — demonstrating a concrete downstream use for the model's predictions.
 
 <div style="display: flex; gap: 10px; margin: 2rem 0; flex-wrap: wrap; justify-content: center;">
