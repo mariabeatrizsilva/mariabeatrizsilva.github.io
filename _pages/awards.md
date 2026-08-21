@@ -51,6 +51,10 @@ classes: wide
 <h2> Professional Programs & Memberships </h2>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
+<strong>13th Heidelberg Laureate Forum (HLF)</strong> (2024-Present) <br> Young Researcher
+</p>
+
+<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
 <strong>Member of Association for Computing Machinery (ACM)</strong> (2024-Present) <br> Member of Special Interest Group on Computer-Human Interaction (SIGCHI)
 </p>
 
