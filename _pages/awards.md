@@ -12,11 +12,11 @@ classes: wide
 <h2> National Recognition </h2>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://cra.org/about/awards/outstanding-undergraduate-researcher-award/">CRA Outstanding Undergraduate Researcher Award</a></strong> (2026) <br> Honorable Mention
+<strong><a href="https://us.fulbrightonline.org/countries/europe-and-eurasia/france/1682"> Fulbright Open Study/Research Award, France </a> </strong> (2026) <br> Finalist
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://us.fulbrightonline.org/countries/europe-and-eurasia/france/1682"> Fulbright Open Study/Research Award, France </a> </strong> (2026) <br> Finalist
+<strong><a href="https://cra.org/about/awards/outstanding-undergraduate-researcher-award/">CRA Outstanding Undergraduate Researcher Award</a></strong> (2026) <br> Honorable Mention
 </p>
 
 <p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
