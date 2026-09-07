@@ -31,7 +31,7 @@ comments: true
 <img src="/assets/images/nightwalk-data.png" alt="Nightwalk">
 </div>
 <div class="card-content">
-<h3>PaperTrail</h3>
+<h3>NightWalk</h3>
 <p class="card-course">Computer Vision for Science and Engineering (Graduate Level)</p>
 <p class="card-description"> NightWalk : Predicting Nighttime Luminesce from Daytime SVI.</p>
 <p class="card-tech">CV • Python • HCI</p>
