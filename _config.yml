@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Maria Beatriz Silva"
   avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a Fulbright Scholar pursuing a Master’s degree in Visual and Creative AI at École Polytechnique. I recently graduated Summa Cum Laude from NYU Courant with a B.S. in Computer Science (Departmental Honors) and a minor in Mathematics. My research focuses on visual computing, machine learning, and computer graphics. Building on my previous work at NYU’s Immersive Computing Lab, I am dedicated to advancing visual systems while ensuring they are developed with human needs and accessibility at their core."
+  bio              : "I am a Fulbright Scholar pursuing a Master’s degree in Visual Computing and Creative AI at École Polytechnique. I recently graduated Summa Cum Laude from NYU Courant with a B.S. in Computer Science (Departmental Honors) and a minor in Mathematics. My research focuses on visual computing, machine learning, and computer graphics. Building on my previous work at NYU’s Immersive Computing Lab, I am dedicated to advancing visual systems while ensuring they are developed with human needs and accessibility at their core."
   location         : "NYC"
   # email            : "mariasilva@nyu.edu"
   links:
