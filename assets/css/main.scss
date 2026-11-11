@@ -18,6 +18,12 @@ search: false
   padding-bottom: 0;
 }
 
+/* Tighter spacing site-wide */
+.page__title { margin-bottom: 0.5rem; }
+.page__content h2 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+.page__content h3 { margin-top: 1rem; margin-bottom: 0.4rem; }
+.page__content p { margin-bottom: 0.75rem; }
+
 /* No underline borders on headings */
 h2,
 .page__content h2,
