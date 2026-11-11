@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.short_title | default: page.title }}{% if site.title %} · {{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | strip_html | strip }}">
+
+  <!-- Link previews (email, Slack, LinkedIn, X) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:description" content="{{ page.description | strip_html | strip }}">
+  {% if page.og_image %}<meta property="og:image" content="{{ page.og_image | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">{% endif %}
+
+  <link rel="stylesheet" href="{{ '/assets/css/project.css' | relative_url }}">
+</head>
+<body>
+
+<nav class="topbar">
+  <a class="topbar-home" href="{{ '/' | relative_url }}">{{ page.site_owner | default: site.title }}</a>
+  <a class="topbar-back" href="{{ page.back_url | default: '/publications/' | relative_url }}">&larr; All publications</a>
+</nav>
+
+<header class="hero">
+  {% if page.status %}<p class="status">{{ page.status }}</p>{% endif %}
+  <h1>{{ page.title }}</h1>
+
+  <p class="authors">
+    {% for a in page.authors %}<span class="author">{% if a.url %}<a href="{{ a.url }}">{% endif %}{% if a.me %}<strong>{{ a.name }}</strong>{% else %}{{ a.name }}{% endif %}{% if a.url %}</a>{% endif %}{% if a.aff %}<sup>{{ a.aff | join: "," }}</sup>{% endif %}</span>{% unless forloop.last %}<span class="sep">, </span>{% endunless %}{% endfor %}
+  </p>
+
+  {% if page.affiliations %}
+  <p class="affiliations">
+    {% for af in page.affiliations %}<span><sup>{{ forloop.index }}</sup>{{ af }}</span>{% endfor %}
+  </p>
+  {% endif %}
+
+  <div class="links">
+    {% for l in page.links %}
+      {% if l.url and l.url != "" %}
+      <a class="btn icon-{{ l.icon }}" href="{{ l.url }}">{{ l.label }}</a>
+      {% else %}
+      <span class="btn is-soon icon-{{ l.icon }}" title="Coming soon">{{ l.label }}<small>soon</small></span>
+      {% endif %}
+    {% endfor %}
+  </div>
+</header>
+
+<main class="content">
+  {{ content }}
+
+  {% if page.bibtex %}
+  <section id="bibtex" class="bibtex">
+    <div class="bibtex-head">
+      <h2>BibTeX</h2>
+      <button type="button" class="copy" onclick="navigator.clipboard.writeText(document.getElementById('bib').innerText).then(()=>{this.textContent='Copied';setTimeout(()=>this.textContent='Copy',1500)})">Copy</button>
+    </div>
+    <pre><code id="bib">{{ page.bibtex | strip | escape }}</code></pre>
+  </section>
+  {% endif %}
+</main>
+
+<footer class="footer">
+  <p>Page layout inspired by the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page.</p>
+</footer>
+
+</body>
+</html>

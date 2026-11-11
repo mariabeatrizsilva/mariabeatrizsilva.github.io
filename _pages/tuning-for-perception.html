@@ -1,0 +1,241 @@
+---
+layout: project
+title: "Tuning for Perception: A Visual Quality Study for Temporal Anti-Aliasing"
+short_title: "Tuning for Perception"
+permalink: /publications/tuning-for-perception/
+back_url: /#publications
+status: "Honors thesis, NYU Courant · Manuscript in preparation · 2026"
+description: "Which TAA parameters actually matter to perceived quality? A study of 2,240 rendered videos across 20 scenes, 4 resolutions and 28 configurations, scored with a graphics-specific perceptual video metric."
+og_image: /assets/images/teaser-final.png
+
+# TODO: confirm every affiliation with your co-authors before publishing.
+authors:
+  - name: Maria Beatriz Silva
+    me: true
+    url: /
+    aff: [1]
+  - name: Kenneth Chen
+    aff: [1]
+  - name: Colin Groth
+    aff: [1]
+  - name: Qi Sun
+    aff: [1]
+  - name: Anton Kaplanyan
+    aff: [2]
+  - name: Akshay Jindal
+    aff: [2]
+affiliations:
+  - New York University
+  - Intel
+
+# Leave url empty to show a grey "soon" button; fill it in when the link exists.
+links:
+  - label: Request paper
+    icon: pdf
+    url: "mailto:mariasilva@nyu.edu?subject=Tuning%20for%20Perception%20manuscript"
+  - label: Dataset
+    icon: data
+    url:
+  - label: Video
+    icon: video
+    url:
+  - label: BibTeX
+    icon: quote
+    url: "#bibtex"
+
+bibtex: |
+  @unpublished{silva2026tuning,
+    title  = {Tuning for Perception: A Visual Quality Study for Temporal Anti-Aliasing},
+    author = {Silva, Maria Beatriz and Chen, Kenneth and Groth, Colin and
+              Sun, Qi and Kaplanyan, Anton and Jindal, Akshay},
+    note   = {Manuscript in preparation},
+    year   = {2026}
+  }
+---
+
+<!--
+  FIGURES: each placeholder below names the figure in the paper PDF it should hold.
+  To swap one in, export the figure into assets/images/ with the filename shown,
+  delete the <div class="fig-placeholder ..."> block, and uncomment the <img> line under it.
+-->
+
+<!-- ===================== Teaser ===================== -->
+<section>
+  <figure>
+    <img src="{{ '/assets/images/teaser-final.png' | relative_url }}" alt="Overview of the study: TAA variations are rendered, scored against a 16x supersampled reference, fitted with a quality predictor, and used to choose TAA settings dynamically.">
+    <figcaption>We measure how four Temporal Anti-Aliasing parameters (temporal accumulation, jitter sampling, history resolution and filter size) affect perceived quality across rendering resolutions. We then fit a model that picks TAA settings in real time from the rendering state.</figcaption>
+  </figure>
+
+  <p class="lede">TAA ships in nearly every modern game engine, yet its parameters are still tuned by trial and error. We measured which ones actually change what viewers see, and found that <strong>one parameter does almost all the work</strong>.</p>
+</section>
+
+<!-- ===================== Abstract ===================== -->
+<section>
+  <h2>Abstract</h2>
+  <p class="abstract">Temporal Anti-Aliasing (TAA) is a highly successful image-space reconstruction technique in real-time rendering and has become a standard component of modern game engines. While recent real-time reconstruction methods have achieved substantial practical success, the perceptual principles underlying temporal anti-aliasing and related reconstruction techniques remain poorly understood, limiting the development of more principled approaches. A better perceptual grounding of TAA could help direct computational resources toward factors that most strongly influence perceived visual quality. In this work, we present a systematic study of how TAA parameters affect perceived visual quality across a diverse set of scenes and rendering resolutions. We used Unreal Engine to render 20 scenes across 4 resolution levels and 28 parameter configurations, producing a representative 2,240 video dataset of TAA artifacts. We evaluated the dataset against a 16× supersampled reference using CGVQM, a perceptual video quality metric designed for computer graphics content. Our results reveal that TAA’s perceptual impact is strongly dependent on the rendering resolution and that among the four parameters studied, the temporal accumulation factor has a substantially larger effect on perceived quality than the others, with this effect becoming more pronounced at lower rendering resolutions. We provide an in-depth analysis of this new dataset, including an analysis of compute-quality tradeoffs for the studied parameters, along with a lightweight computational model that can accurately predict our empirical findings. We demonstrate how this model can be used to optimize default TAA parameters or for real-time performance-quality optimization in video games.</p>
+</section>
+
+<!-- ===================== Dataset ===================== -->
+<section>
+  <h2>A dataset of TAA artifacts</h2>
+  <p>We rendered every scene in Unreal Engine 5.6 at four internal resolutions and swept each TAA parameter independently, holding the others at engine defaults. Each render is a 5-second, 1080p, 30 fps sequence, saved as lossless PNG frames so that compression doesn’t confound the quality scores. Each one is scored against a 16× supersampled reference with <a href="https://doi.org/10.1111/cgf.70221">CGVQM</a>, a perceptual video quality metric calibrated on rendering artifacts.</p>
+
+  <div class="stats">
+    <div class="stat"><b>20</b><span>scenes</span></div>
+    <div class="stat"><b>4</b><span>render resolutions</span></div>
+    <div class="stat"><b>28</b><span>TAA configurations</span></div>
+    <div class="stat"><b>2,240</b><span>scored videos</span></div>
+  </div>
+
+  <figure>
+    <img src="{{ '/assets/projects/tuning-for-perception/taa-scenes.png' | relative_url }}" alt="Grid of representative frames from the 20 scenes in the dataset.">
+    <figcaption><b>The 20 scenes.</b> They were chosen to cover the conditions under which aliasing is hardest to hide, such as thin geometry, high-contrast lighting, specular highlights and foliage.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="{{ 'assets/projects/tuning-for-perception/taa-pipeline.jpg' | relative_url }}" alt="Data collection pipeline diagram.">
+    <figcaption><b>Pipeline.</b> Each scene yields 112 renders (28 configurations × 4 resolutions), and each render is scored per frame and per video against its 16× SSAA reference.</figcaption>
+  </figure>
+</section>
+
+<!-- ===================== Findings ===================== -->
+<section>
+  <h2>What we found</h2>
+
+  <div class="finding">
+    <div class="n">1</div>
+    <div>
+      <h3>One parameter does almost all the work</h3>
+      <p>The <em>alpha weight</em> (how much the current frame contributes to the accumulated history) dominates perceived quality. Tuning it away from Unreal’s default of 0.04 moves scores by +2.02 to −5.09 CGVQM points on average. History-buffer resolution has a modest effect. Filter size and jitter sample count barely matter: their score ranges stay at or below 0.3 points at every resolution.</p>
+    </div>
+  </div>
+
+  <figure>
+   <img src="{{ 'assets/projects/tuning-for-perception/taa-parameter-curves.png' | relative_url }}" alt="Response curves of quality versus each TAA parameter.">
+    <figcaption><b>Response curves.</b> Mean-centered quality as a function of each parameter, averaged over 20 scenes and four resolutions. The dashed line marks the Unreal Engine default, and bands show ±1 SD across scenes.</figcaption>
+  </figure>
+
+  <div class="finding">
+    <div class="n">2</div>
+    <div>
+      <h3>It matters more the lower you render</h3>
+      <p>Most games run TAA below native resolution and upsample, and that is where the choice of alpha weight matters most. Its quality range more than doubles from native to 25% resolution. The best value also moves: lower resolutions favor stronger accumulation (α&nbsp;≈&nbsp;0.2), while near-native resolutions favor more of the current frame (α&nbsp;≈&nbsp;0.5–0.6).</p>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Render resolution</th><th>Alpha weight</th><th>History %</th><th>Filter size</th><th>Num. samples</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>100%</td><td class="hi">2.71 ± 2.82</td><td>1.37 ± 1.19</td><td>0.15 ± 0.25</td><td>0.29 ± 0.26</td></tr>
+        <tr><td>75%</td><td class="hi">2.79 ± 2.46</td><td>1.43 ± 1.27</td><td>0.15 ± 0.25</td><td>0.18 ± 0.25</td></tr>
+        <tr><td>50%</td><td class="hi">3.66 ± 3.27</td><td>1.36 ± 1.17</td><td>0.14 ± 0.23</td><td>0.16 ± 0.23</td></tr>
+        <tr><td>25%</td><td class="hi">6.39 ± 6.89</td><td>1.46 ± 1.04</td><td>0.13 ± 0.18</td><td>0.16 ± 0.20</td></tr>
+      </tbody>
+    </table>
+    <p class="table-note">Range of CGVQM scores (best − worst) across the values tested for each parameter, as mean ± SD across scenes. Only alpha weight and history % are consistently significant (Kruskal–Wallis).</p>
+  </div>
+
+  <figure>
+    <img src="{{ 'assets/projects/tuning-for-perception/taa-alpha-comparison.png' | relative_url }}" alt="Side-by-side frames and error maps at alpha 0.04 and alpha 1.0.">
+    <figcaption><b>The trade-off.</b> At the default weight, heavy temporal accumulation blurs away fine detail in the window. At α = 1.0 the detail returns, but with severe flicker, which shows up as red regions in the CGVQM error map.</figcaption>
+  </figure>
+
+<figure>
+  <div class="video-pair">
+    <div>
+      <video src="{{ '/assets/projects/tuning-for-perception/taa-flicker.mp4' | relative_url }}" autoplay muted loop playsinline></video>
+      <p class="label">With flicker</p>
+    </div>
+    <div>
+      <video src="{{ '/assets/projects/tuning-for-perception/taa-stable.mp4' | relative_url }}" autoplay muted loop playsinline></video>
+      <p class="label">Without flicker</p>
+    </div>
+  </div>
+  <figcaption><b>The trade-off in motion.</b> Weighting the current frame heavily keeps fine detail sharp but lets it flicker from frame to frame. Weighting history heavily is stable but softer. This is hard to see in a still frame and obvious in motion.</figcaption>
+</figure>
+
+  <div class="finding">
+    <div class="n">3</div>
+    <div>
+      <h3>Better quality at no extra cost</h3>
+      <p>The TAA pass takes under 0.08 ms per frame, and changing alpha weight, filter size or sample count adds no measurable GPU time. Moving alpha weight to its resolution-optimal value improves quality over Unreal’s default by up to <strong>9.88%</strong>, essentially for free. The gain is scene-dependent, though: it ranges from 0.13% to 9.88%. That points toward content-adaptive tuning rather than a single new default.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== Model ===================== -->
+<section>
+  <h2>A lightweight quality model</h2>
+  <p>For each parameter, we fit a six-term model that predicts CGVQM quality from render resolution <i>R</i> and parameter value <i>v</i>:</p>
+  <div class="equation">
+    𝓜(<i>R</i>, <i>v</i>) = <i>k</i><sub>1</sub> + <i>k</i><sub>2</sub> log <i>R</i> + <i>k</i><sub>3</sub> log <i>v</i> + <i>k</i><sub>4</sub> <i>vR</i> + <i>k</i><sub>5</sub> <i>v</i> + <i>k</i><sub>6</sub> <i>R</i>
+  </div>
+  <p>The model fits the measured data closely: for alpha weight, RMSE = 0.38 CGVQM points (on a 0–100 scale) with Pearson <i>r</i> = 0.993. Because it is cheap to evaluate, it can run inside a renderer’s frame loop.</p>
+
+  <div class="apps">
+    <div class="app">
+      <h3>Dynamic resolution scaling</h3>
+      <p>When the engine drops resolution to hold frame rate, the model gives the quality-maximizing alpha weight for that resolution in closed form.</p>
+    </div>
+    <div class="app">
+      <h3>Visually lossless rendering</h3>
+      <p>Given a target quality, a search over the model finds the lowest resolution, and the alpha weight to pair with it, that still meets the target. This saves compute without visible loss.</p>
+    </div>
+  </div>
+
+  <figure>
+    <img src="{{ 'assets/projects/tuning-for-perception/taa-applications.png' | relative_url }}" alt="Heatmaps of predicted quality versus alpha weight and resolution, with optimal settings marked.">
+    <figcaption><b>Two views of the same model.</b> (a) The quality-maximizing alpha weight for each target resolution (red dashed line). (b) The alpha weight that reaches a given quality at the lowest resolution.</figcaption>
+  </figure>
+
+    <h3 id="demo">Dynamic TAA in practice</h3>
+  <p>We applied the dynamic resolution scaling use case in-engine: each frame, the model sets alpha weight for the current resolution. Below, we compare it with Unreal’s fixed default and with the 16× supersampled reference.</p>
+
+  <figure class="video-hero">
+    <video src="{{ '/assets/projects/tuning-for-perception/taa-dynamic-alpha.mp4' | relative_url }}" autoplay muted loop playsinline></video>
+    <figcaption>Fixed alpha (left), dynamic alpha from our model (middle), and 16× SSAA reference (right). On the resolution chart, dynamic alpha recovers fine lines that the fixed default loses, and it comes much closer to the reference. On the chain-link fence, the higher alpha lets some flicker through. Regions like this motivate per-region, content-adaptive tuning, which we discuss next.</figcaption>
+  </figure>
+
+  
+</section>
+
+<!-- ===================== Next steps ===================== -->
+<section>
+  <h2>Ongoing work</h2>
+
+  <div class="finding">
+    <div class="n">1</div>
+    <div>
+      <h3>Optimizing parameters jointly</h3>
+      <p>This study varies one parameter at a time around Unreal’s defaults. That isolates each effect but can hide interactions: filter size and sample count may matter little only because alpha weight was held at 0.04, where history already absorbs most subpixel variation. We are now searching the joint parameter space to find configurations that one-at-a-time sweeps cannot reach.</p>
+    </div>
+  </div>
+
+  <div class="finding">
+    <div class="n">2</div>
+    <div>
+      <h3>Content dependence, in depth</h3>
+      <p>Sensitivity to alpha weight and history resolution tracks scene texture, spatial detail and temporal activity. With 20 scenes, though, these trends are suggestive rather than conclusive. We are expanding the scene corpus and moving from per-video to per-region and per-frame content features, such as motion-vector statistics, so that tuning can respond to what is on screen.</p>
+    </div>
+  </div>
+
+  <div class="finding">
+    <div class="n">3</div>
+    <div>
+      <h3>A better quality model</h3>
+      <p>The current model is fit separately for each parameter from resolution alone. Next, we are building a single predictor over all parameters, resolution and content features. We are comparing parametric fits with more flexible learned models, and we evaluate on held-out scenes so the model has to generalize to content it has not seen.</p>
+    </div>
+  </div>
+
+  <p>Throughout, quality comes from CGVQM, a metric calibrated on rendering distortions. Because the method is metric-agnostic, a subjective user study can validate the key findings against real viewers.</p>
+</section>
+
+<!-- ===================== My role ===================== -->
+<!-- Keep it to 2–4 plain sentences. Delete this section if you'd rather not include it. -->
+<section class="role">
+  <h2>My role</h2>
+  <p>This project was my honors thesis at NYU Courant, carried out in collaboration with Intel. As lead author, I designed and ran the study. I built the scripted Unreal Engine pipeline that rendered the full dataset, and the Python evaluation pipeline around perceptual quality metrics that we used to isolate which parameters drive perceived quality.</p>
+</section>
