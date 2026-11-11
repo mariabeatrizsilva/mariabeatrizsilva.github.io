@@ -19,7 +19,7 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Maria Beatriz Silva"
 title_separator          : "-"
-subtitle                 : Presidential Honors Scholar at NYU and Research Assistant at NYU's Immersive Computing Lab
+subtitle                 : MSc&T in Visual Computing and Creative AI @ École Polytechnique
 name                     : "Maria Beatriz Silva"
 description              : "My Website."
 url                      : "https://mariabeatrizsilva.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Maria Beatriz Silva"
   avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am a Fulbright Scholar pursuing a Master’s degree in Visual Computing and Creative AI at École Polytechnique. I recently graduated Summa Cum Laude from NYU Courant with a B.S. in Computer Science (Departmental Honors) and a minor in Mathematics. My research focuses on visual computing, machine learning, and computer graphics. Building on my previous work at NYU’s Immersive Computing Lab, I am dedicated to advancing visual systems while ensuring they are developed with human needs and accessibility at their core."
+  bio              : "Fulbright Scholar working on graphics, ML, and human perception. Prev Presidential Honors Scholar @ NYU and student researcher at NYU's Immersive Computing Lab."
   location         : "NYC"
   # email            : "mariasilva@nyu.edu"
   links:
