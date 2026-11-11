@@ -79,6 +79,7 @@ ACM CHI Conference on Human Factors in Computing Systems
 </ul>
 </div>
  
+<hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
 <div style="margin-bottom: 2rem;">
  
 <h3 style="margin-bottom: 1rem;">Tuning for Perception: A Visual Quality Study for Temporal Anti-Aliasing</h3>
