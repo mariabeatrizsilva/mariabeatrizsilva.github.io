@@ -7,12 +7,7 @@ classes: wide
 ---
 
 <div style="margin-top: -1rem;">
-
-
-<div style="margin-bottom: 2rem; margin-top: 1.5rem;">
-<h2> Conference Publications </h2>
-
-
+<div style="margin-bottom: 2rem; margin-top: 0;">
 <h3 style="margin-bottom: 1rem;">GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts</h3>
 
 <div style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
@@ -83,8 +78,6 @@ ACM CHI Conference on Human Factors in Computing Systems
   <li>Co-presented the paper at ACM CHI 2024</li>
 </ul>
 </div>
-
-<h2> Manuscripts in Preparation </h2>
  
 <div style="margin-bottom: 2rem;">
  
@@ -117,7 +110,6 @@ Manuscript in preparation (available upon request). Honors thesis, NYU Courant. 
  
 <hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
 
-
 <div style="margin-bottom: 2rem;">
 <h2> Presentations </h2>
 <p style="margin-left: 1.5rem; margin-bottom: 0.5rem; font-size: 0.95rem;">
@@ -131,12 +123,17 @@ May 2024
 
 
 <style>
-  h3 {
-    margin-top: 2rem;
+  .page__content h2 {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  .page__content h3 {
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
     color: #2c3e50;
   }
-  
   strong {
     color: #34495e;
   }
