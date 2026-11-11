@@ -47,25 +47,3 @@ h2,
   font-size: 0.8rem;
 }
 
-/* Tighter spacing site-wide */
-.page__title {
-  margin-bottom: 0.5rem !important;     /* gap under the main heading */
-}
-.page__content > :first-child {
-  margin-top: 0.5rem !important;        /* first thing after the heading */
-}
-.page__content h2 {
-  margin-top: 1.25rem !important;
-  margin-bottom: 0.5rem !important;
-}
-.page__content h3 {
-  margin-top: 1rem !important;
-  margin-bottom: 0.4rem !important;
-}
-.page__content p {
-  margin-bottom: 0.75rem !important;
-}
-.page__meta {
-  margin-top: 0.25rem !important;       /* "less than 1 minute read" on blog posts */
-  margin-bottom: 0.5rem !important;
-}

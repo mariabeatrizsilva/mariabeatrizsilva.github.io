@@ -17,7 +17,7 @@ classes: wide
 <h2>University Honors</h2>
 <ul class="awards">
   <li><span>Summa Cum Laude, NYU</span><span class="yr">2026</span></li>
-  <li><span><a href="https://cas.nyu.edu/academic-programs/honors-programs/cas-presidential-scholars-program.html">Presidential Honors Scholar</a></span><span class="yr">2022–2026</span></li>
+  <li><span><a href="https://cas.nyu.edu/academic-programs/honors-programs/cas-presidential-scholars-program.html">Presidential Honors Scholar</a></span><span class="yr">2023–2026</span></li>
   <li><span>Dean's List (all semesters)</span><span class="yr">2022–2026</span></li>
   <li><span><a href="https://cas.nyu.edu/undergraduate-research/deans-undergraduate-research-fund/DURFG.html">Dean's Undergraduate Research Fund (DURF) Grant</a></span><span class="yr">2024</span></li>
 </ul>
@@ -35,4 +35,10 @@ classes: wide
   .awards li { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 0.4rem; }
   .awards .yr { color: #666; white-space: nowrap; }
   .awards a { text-decoration: none; }
+</style>
+
+<style>
+  .page__title { margin-bottom: 0.5rem; }
+  .page__content > :first-child { margin-top: 0.5rem; }
+  .page__content h2 { margin-top: 1.25rem; margin-bottom: 0.5rem; border-bottom: none; padding-bottom: 0; }
 </style>
