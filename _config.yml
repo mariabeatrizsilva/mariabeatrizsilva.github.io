@@ -115,8 +115,8 @@ analytics:
 author:
   name             : "Maria Beatriz Silva"
   avatar           : "/assets/images/bio-photo.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Fulbright Scholar working on graphics, ML, and human perception. Prev Presidential Honors Scholar @ NYU and student researcher at NYU's Immersive Computing Lab."
-  location         : "NYC"
+  bio              : "A Master's student in Visual Computing and Creative AI at École Polytechnique working on graphics, ML, and human perception. Prev Presidential Honors Scholar @ NYU and student researcher at NYU's Immersive Computing Lab."
+  location         : "Paris, France"
   # email            : "mariasilva@nyu.edu"
   links:
     - label: "Email"
