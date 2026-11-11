@@ -6,61 +6,33 @@ author_profile: true
 classes: wide
 ---
 
-<div style="margin-top: -1rem;">
-<div style="margin-bottom: 1.5rem; margin-top: 1rem;">
+<h2>National Recognition</h2>
+<ul class="awards">
+  <li><span><a href="https://us.fulbrightonline.org/countries/europe-and-eurasia/france/1682">Fulbright Open Study/Research Award, France</a>, Winner</span><span class="yr">2026</span></li>
+  <li><span><a href="https://cra.org/about/awards/outstanding-undergraduate-researcher-award/">CRA Outstanding Undergraduate Researcher Award</a>, Honorable Mention</span><span class="yr">2026</span></li>
+  <li><span><a href="https://www.aspirations.org/news/award-programs/ncwit-announces-2026-aic-collegiate-award-recipients">NCWIT Aspirations in Computing Collegiate Award</a>, Honorable Mention</span><span class="yr">2026</span></li>
+  <li><span><a href="https://www.pbk.org">Phi Beta Kappa Society</a>, Member</span><span class="yr">2026</span></li>
+</ul>
 
-<h2> National Recognition </h2>
+<h2>University Honors</h2>
+<ul class="awards">
+  <li><span>Summa Cum Laude, NYU</span><span class="yr">2026</span></li>
+  <li><span><a href="https://cas.nyu.edu/academic-programs/honors-programs/cas-presidential-scholars-program.html">Presidential Honors Scholar</a></span><span class="yr">2022–2026</span></li>
+  <li><span>Dean's List (all semesters)</span><span class="yr">2022–2026</span></li>
+  <li><span><a href="https://cas.nyu.edu/undergraduate-research/deans-undergraduate-research-fund/DURFG.html">Dean's Undergraduate Research Fund (DURF) Grant</a></span><span class="yr">2024</span></li>
+</ul>
 
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://us.fulbrightonline.org/countries/europe-and-eurasia/france/1682"> Fulbright Open Study/Research Award, France </a> </strong> (2026) <br> Finalist
-</p>
+<h2>Programs &amp; Memberships</h2>
+<ul class="awards">
+  <li><span>Heidelberg Laureate Forum, Selected Young Researcher</span><span class="yr">2026</span></li>
+  <li><span>ACM and ACM SIGCHI, Member</span><span class="yr">2024–present</span></li>
+  <li><span><a href="https://mlt.org/career-prep/">Management Leadership for Tomorrow, Career Prep Fellow</a></span><span class="yr">2024–2026</span></li>
+  <li><span><a href="https://research.google/programs-and-events/past-programs/csrmp/">Google Computer Science Research Mentorship Program (CSRMP)</a></span><span class="yr">2023</span></li>
+</ul>
 
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://cra.org/about/awards/outstanding-undergraduate-researcher-award/">CRA Outstanding Undergraduate Researcher Award</a></strong> (2026) <br> Honorable Mention
-</p>
-
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://www.aspirations.org/news/award-programs/ncwit-announces-2026-aic-collegiate-award-recipients">NCWIT Aspirations in Computing Collegiate Award </a> </strong> (2026) <br> Honorable Mention
-</p>
-
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://www.pbk.org"> Phi Beta Kappa Society </a> </strong> (2026) <br> Member
-</p>
-
-</div>
-
-<div style="margin-bottom: 1.5rem; margin-top: 1rem;">
-<h2> University Honors </h2>
-
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong>Summa Cum Laude </strong> 
-</p>
-
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://cas.nyu.edu/academic-programs/honors-programs/cas-presidential-scholars-program.html">Presidential Honors Scholar</a> </strong> 
-</p>
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong>Dean's List</strong> (All semesters)
-</p>
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong> <a href="https://cas.nyu.edu/undergraduate-research/deans-undergraduate-research-fund/DURFG.html"> Dean's Undergraduate Research Fund (DURF) Grant Recipient </a> </strong> (2024) 
-</p>
-</div>
-
-<div style="margin-bottom: 1.5rem; margin-top: 1rem;">
-<h2> Professional Programs & Memberships </h2>
-
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong>13th Heidelberg Laureate Forum (HLF)</strong> (2024-Present) <br> Young Researcher
-</p>
-
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong>Member of Association for Computing Machinery (ACM)</strong> (2024-Present) <br> Member of Special Interest Group on Computer-Human Interaction (SIGCHI)
-</p>
-
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://mlt.org/career-prep/"> Management Leadership for Tomorrow Career Preparation Program </a> </strong> (2024-Present)
-
-<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
-<strong><a href="https://research.google/programs-and-events/past-programs/csrmp/"> Google Computer Science Research Mentorship Program (CSRMP)</a> </strong> (2023) 
-</p>
+<style>
+  .awards { list-style: none; padding-left: 0; margin: 0 0 1.5rem 0; font-size: 0.95rem; }
+  .awards li { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 0.4rem; }
+  .awards .yr { color: #666; white-space: nowrap; }
+  .awards a { text-decoration: none; }
+</style>
