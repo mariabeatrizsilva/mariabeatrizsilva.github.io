@@ -82,6 +82,41 @@ ACM CHI Conference on Human Factors in Computing Systems
   <li>Directed and produced the video submission</li>
   <li>Co-presented the paper at ACM CHI 2024</li>
 </ul>
+</div>
+
+<h2> Manuscripts in Preparation </h2>
+ 
+<div style="margin-bottom: 2rem;">
+ 
+<h3 style="margin-bottom: 1rem;">Tuning for Perception: A Visual Quality Study for Temporal Anti-Aliasing</h3>
+ 
+<div style="margin-left: 1.5rem; margin-bottom: 1.5rem;">
+  <img src="/assets/images/teaser-final.png" alt="Temporal anti-aliasing comparison" style="width: 100%; max-width: 1000px; margin-bottom: 0.5rem; border-radius: 4px; display: block;">
+</div>
+ 
+<p style="margin-left: 1.5rem; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 0.95rem;">
+<strong>Silva, M. B.</strong>, Chen, K., Groth, C., Sun, Q., Kaplanyan, A., & Jindal, A. (2026)
+</p>
+ 
+<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-style: italic; font-size: 0.95rem;">
+Manuscript in preparation (available upon request). Honors thesis, NYU Courant. In collaboration with Intel.
+</p>
+ 
+<p style="margin-left: 1.5rem; margin-bottom: 1rem; font-size: 0.95rem;">
+<strong>Abstract:</strong> Temporal anti-aliasing (TAA) is standard in real-time rendering, but its parameters are usually tuned by heuristics rather than by what people actually see. We systematically vary TAA parameters across scenes and use perceptual quality metrics to identify which rendering choices most affect perceived visual quality, as a step toward tuning TAA directly for human perception.
+</p>
+ 
+<p style="margin-left: 1.5rem; margin-bottom: 0.5rem; font-size: 0.95rem;"><strong>My Contributions:</strong></p>
+<ul style="margin-left: 1.5rem; margin-top: 0; font-size: 0.95rem;">
+  <li>Designed and executed the full study as lead author (honors thesis)</li>
+  <li>Built a scripted rendering pipeline in Unreal Engine generating 2,000+ videos across 10 scenes and 28 TAA parameter configurations</li>
+  <li>Built the Python evaluation pipeline around perceptual quality metrics to isolate which parameters most affect perceived quality</li>
+</ul>
+ 
+</div>
+ 
+<hr style="margin-top: 1.5rem; margin-bottom: 1.5rem;">
+
 
 <div style="margin-bottom: 2rem;">
 <h2> Presentations </h2>
