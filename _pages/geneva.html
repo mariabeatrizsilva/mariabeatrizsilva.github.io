@@ -1,0 +1,181 @@
+---
+layout: project
+title: "GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts"
+short_title: "GeneVA"
+permalink: /publications/geneva/
+back_url: /#publications
+status: "WACV 2026"
+description: "The first large-scale dataset of human-annotated artifacts in AI-generated video: 16,451 annotations across 16,356 videos from Sora, Pika and VideoCrafter2, with per-frame bounding boxes, free-text descriptions and quality ratings."
+og_image: /assets/images/geneva-artifacts.png
+
+authors:
+  - name: Jenna Kang
+  - name: Maria Beatriz Silva
+    me: true
+    url: /
+  - name: Patsorn Sangkloy
+  - name: Kenneth Chen
+  - name: Niall L. Williams
+  - name: Qi Sun
+    url: https://qisun.me
+affiliations:
+  - New York University
+
+links:
+  - label: Paper
+    icon: pdf
+    url: "https://openaccess.thecvf.com/content/WACV2026/papers/Kang_GeneVA_A_Dataset_WACV_2026_paper.pdf"
+  - label: arXiv
+    icon: pdf
+    url: "https://arxiv.org/abs/2509.08818"
+  - label: Supplementary
+    icon: pdf
+    url: "https://openaccess.thecvf.com/content/WACV2026/supplemental/Kang_GeneVA_A_Dataset_WACV_2026_supplemental.pdf"
+  - label: Video
+    icon: video
+    url: "https://youtu.be/toQTET43f9I"
+  - label: Dataset
+    icon: data
+    url:
+  - label: BibTeX
+    icon: quote
+    url: "#bibtex"
+
+bibtex: |
+  @InProceedings{Kang_2026_WACV,
+    author    = {Kang, Jenna and Silva, Maria Beatriz and Sangkloy, Patsorn and
+                 Chen, Kenneth and Williams, Niall L. and Sun, Qi},
+    title     = {GeneVA: A Dataset of Human Annotations for Generative Text to Video Artifacts},
+    booktitle = {Proceedings of the IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)},
+    year      = {2026}
+  }
+---
+
+<!--
+  FIGURES: placeholders name the paper figure they should hold. To swap one in, save the image
+  under assets/projects/geneva/ with the filename shown, delete the <div class="fig-placeholder ...">
+  block, and uncomment the <img> line under it.
+-->
+
+<!-- ===================== Teaser ===================== -->
+<section>
+  <figure>
+    <img src="{{ '/assets/images/geneva-artifacts.png' | relative_url }}" alt="Example frames from generated videos for each artifact category: shape, form and geometry; visual artifacts; motion; physics; and semantic mismatch.">
+    <figcaption><b>Our artifact taxonomy.</b> Annotators marked artifacts in AI-generated videos and assigned each one a category: shape, form and geometry; visual artifacts; motion; physics; or semantic mismatch with the prompt.</figcaption>
+  </figure>
+
+  <p class="lede">Text-to-video models can render a convincing scene, then add a hand that belongs to no one or make steam appear from nowhere. GeneVA records <strong>where, when and what</strong> those artifacts are, as judged by people.</p>
+</section>
+
+<!-- ===================== Abstract ===================== -->
+<section>
+  <h2>Abstract</h2>
+  <p class="abstract">Recent advances in probabilistic generative models have extended capabilities from static image synthesis to text-driven video generation. However, the inherent randomness of their generation process can lead to unpredictable artifacts, such as impossible physics and temporal inconsistency. Progress in addressing these challenges requires systematic benchmarks, yet existing datasets primarily focus on generative images due to the unique spatio-temporal complexities of videos. To bridge this gap, we introduce GeneVA, a large-scale artifact dataset with rich human annotations that focuses on spatio-temporal artifacts in videos generated from natural text prompts. We hope GeneVA can enable and assist critical applications, such as benchmarking model performance and improving generative video quality.</p>
+</section>
+
+<!-- ===================== Dataset ===================== -->
+<section>
+  <h2>The dataset</h2>
+  <p>We sampled real prompts that people wrote for text-to-video tools (from VidProM) and generated videos from each one with three models: Sora, Pika and VideoCrafter2. That gives about 14.5 hours of content in total. Crowd workers rated each video for overall quality and for how well it matched its prompt, both on 7-point scales. They then marked up to five artifacts per video, each with a category, a free-text description, and a bounding box tracked across the frames where the artifact appears.</p>
+
+  <div class="stats">
+    <div class="stat"><b>5,452</b><span>real user prompts</span></div>
+    <div class="stat"><b>3</b><span>video models</span></div>
+    <div class="stat"><b>16,356</b><span>generated videos</span></div>
+    <div class="stat"><b>16,451</b><span>artifact annotations</span></div>
+  </div>
+
+  <figure>
+    <img src="{{ '/assets/images/geneva-teaser.png' | relative_url }}" alt="Annotated example videos with bounding boxes and descriptions, and radar plots of artifact counts and ratings per category for Sora, VideoCrafter2 and Pika.">
+    <figcaption><b>What an annotation looks like.</b> Top: annotated frames with each video’s prompt, its ratings and the annotator’s description of the artifact. Bottom: artifact counts and average ratings per category for each model.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="{{ '/assets/projects/geneva/geneva-interface.png' | relative_url }}" alt="Screenshot of the annotation interface.">
+    <figcaption><b>Annotation interface.</b> Annotators draw boxes on keyframes, and the boxes are interpolated across the frames in between, so each artifact is localized in both space and time.</figcaption>
+  </figure>
+</section>
+
+<!-- ===================== Findings ===================== -->
+<section>
+  <h2>What the annotations show</h2>
+
+  <div class="finding">
+    <div class="n">1</div>
+    <div>
+      <h3>Models differ, and people notice</h3>
+      <p>Sora was rated well above Pika and VideoCrafter2 on both quality and prompt alignment. Its videos also had fewer artifacts, which covered less of the frame. Ratings for the other two models clustered around the middle of the scale.</p>
+    </div>
+  </div>
+
+  <div class="finding">
+    <div class="n">2</div>
+    <div>
+      <h3>Missing the prompt costs quality too</h3>
+      <p>When a video didn’t match its prompt, annotators lowered not only the alignment score but also the overall quality score, for every model. Mismatched videos also had more artifacts.</p>
+    </div>
+  </div>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Model</th><th>Quality (match)</th><th>Quality (mismatch)</th><th>Prompt (match)</th><th>Prompt (mismatch)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Pika</td><td>4.27</td><td>3.60</td><td>4.68</td><td>2.94</td></tr>
+        <tr><td>VideoCrafter2</td><td>4.45</td><td>3.80</td><td>4.97</td><td>3.08</td></tr>
+        <tr><td>Sora</td><td class="hi">5.46</td><td>5.00</td><td class="hi">5.60</td><td>3.93</td></tr>
+      </tbody>
+    </table>
+    <p class="table-note">Mean ratings (1–7) for videos with and without a semantic-mismatch annotation.</p>
+  </div>
+
+  <div class="finding">
+    <div class="n">3</div>
+    <div>
+      <h3>More artifact area, lower quality</h3>
+      <p>The more of the frame that artifact boxes covered, the lower people rated a video. The correlation is weak but highly significant (pooled <i>r</i> = −0.26, <i>p</i> &lt; 0.0001). Coverage explains only part of the rating, which is one reason GeneVA also records what each artifact is.</p>
+    </div>
+  </div>
+
+  <figure>
+    <img src="{{ '/assets/projects/geneva/geneva-coverage.png' | relative_url }}" alt="Box plots of artifact coverage versus quality score for each model.">
+    <figcaption><b>Coverage vs. quality.</b> Videos with lower quality ratings tend to have more of the frame covered by annotated artifacts.</figcaption>
+  </figure>
+</section>
+
+<!-- ===================== Detector ===================== -->
+<section>
+  <h2>A baseline artifact detector</h2>
+  <p>To show what the dataset enables, we trained a two-stage model that finds artifacts and describes them in words. A temporal fusion module attends across five frames around an anchor frame. A transformer detector (RT-DETR) then localizes artifacts, and a captioning model (GIT) writes a short description of each one.</p>
+
+  <figure>
+    <img src="{{ '/assets/projects/geneva/geneva-detector.png' | relative_url }}" alt="Diagram of the two-stage artifact detection and captioning pipeline.">
+  </figure>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Method</th><th>AP<sub>25</sub></th><th>AP<sub>50</sub></th><th>AP<sub>75</sub></th><th>AP</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Ours</td><td class="hi">0.132</td><td class="hi">0.091</td><td class="hi">0.004</td><td class="hi">0.032</td></tr>
+        <tr><td>Without temporal fusion</td><td>0.103</td><td>0.057</td><td>0.000</td><td>0.020</td></tr>
+      </tbody>
+    </table>
+    <p class="table-note">Detection on held-out test videos. A random baseline reaches about 0.01 AP<sub>25</sub>.</p>
+  </div>
+
+  <p>The scores are low in absolute terms. Artifacts are hard to localize precisely because they rarely have the clean edges of ordinary objects, and that difficulty is part of what makes GeneVA a useful benchmark. Even so, the detector does far better than chance, and looking across time clearly helps. It also transfers to a model it never saw in training: on videos from Google’s Veo, it finds and describes plausible artifacts.</p>
+
+  <figure>
+    <img src="{{ '/assets/projects/geneva/geneva-veo.png' | relative_url }}" alt="Detector predictions with captions on frames from Veo videos.">
+    <figcaption><b>Zero-shot on Veo.</b> Predicted artifact boxes and captions on videos from a model the detector never saw in training.</figcaption>
+  </figure>
+</section>
+
+<!-- ===================== My role ===================== -->
+<section class="role">
+  <h2>My role</h2>
+  <p>I built the data acquisition pipeline: a Python system that located and extracted the study videos from a 2.7 TB generated-video corpus within HPC storage limits. I also analyzed generated videos and reviewed prior work to shape the artifact taxonomy. During study design, I proposed showing annotators each video’s prompt, which is what lets GeneVA measure prompt–video alignment as well as visual artifacts.</p>
+</section>
