@@ -8,8 +8,6 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
----
-
 /* ---- custom ---- */
 
 /* No lines under headings, site-wide */
