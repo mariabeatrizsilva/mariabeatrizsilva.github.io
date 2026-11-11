@@ -63,6 +63,19 @@ classes: wide
     <a href="/publications/">Details</a>
   </div>
 </div>
+
+<h2 id="outreach">Teaching & Outreach</h2>
+<ul class="outreach">
+  <li><strong>Education Fellow, <a href="https://www.elite-education.org">ELiTE Education</a></strong> (2023–2024): Taught a weekly C++/Arduino course to 20 NYC high schoolers from underrepresented backgrounds; I still mentor students as they start college.</li>
+  <li><strong>Traveler, <a href="https://www.reachtheworld.org/maria-beatrizs-journey-france">Reach the World</a></strong> (2026–present): Sharing my Fulbright year with K-12 classrooms through field notes and live virtual sessions.</li>
+  <li><strong>Duolingo Campus Ambassador, NYU</strong> (2024–2025): Partnered with NYU Women in Computing on an info session for 40+ students on internship pathways.</li>
+</ul>
+
+<style>
+  .outreach { font-size: 0.9rem; line-height: 1.5; padding-left: 1.2rem; }
+  .outreach li { margin-bottom: 0.6rem; }
+  .outreach a { text-decoration: none; }
+</style>
  
 <style>
   .pub { display: flex; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; align-items: flex-start; }
@@ -80,14 +93,16 @@ classes: wide
   
   h2,
 .page__content h2,
-.archive__subtitle {
-  border-bottom: none !important;
-  padding-bottom: 0 !important;
-}
+  .archive__subtitle {
+    font-size: 1.3rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 0.5rem !important;   /* was 1rem */
+  }
 
-
+  /* Post titles: remove the theme's big top margin */
   .archive__item-title {
     font-size: 1.1rem !important;
+    margin-top: 0.5rem !important;      /* new */
     margin-bottom: 0.25rem !important;
   }
   
